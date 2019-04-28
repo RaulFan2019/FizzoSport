@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <LinearLayout
+            android:id="@+id/ll_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="18dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="9.6dp"
+                android:background="@drawable/ic_fizzo_device" />
+
+            <View
+                android:id="@+id/v_watch_battery"
+                android:layout_width="6.7dp"
+                android:layout_height="17.7dp"
+                android:layout_marginLeft="5dp" />
+
+            <View
+                android:id="@+id/v_watch_sync"
+                android:layout_width="15dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_sync_now" />
+
+            <TextView
+                android:id="@+id/tv_watch_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="12.7dp" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/app_name" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_main_error_tip"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/accent"
+        android:textSize="11.7dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="272dp">
+        <!-- 消耗分钟数 -->
+        <FrameLayout
+            android:layout_width="158dp"
+            android:layout_height="158dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_health_data_round_gray">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/bg_health_data_round_gray" />
+
+            <View
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/bg_health_data_round_line" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart_sport_time"
+                android:layout_width="148dp"
+                android:layout_height="148dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical" />
+
+            <View
+                android:layout_width="5.7dp"
+                android:layout_height="12.9dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/ic_sport_time_red" />
+
+            <TextView
+                android:id="@+id/tv_sport_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="123"
+                android:textColor="@android:color/white"
+                android:textSize="54dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="38dp"
+                android:text="@string/unit_minute"
+                android:textColor="#ff4612"
+                android:textSize="9.8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/bg_shape_fillet_minute"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <View
+                    android:layout_width="8.6dp"
+                    android:layout_height="8.6dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/ic_tip_red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_effective_sport_time"
+                    android:textColor="#ff4612"
+                    android:textSize="9dp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <!-- 卡路里 -->
+        <FrameLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="138dp"
+            android:background="@drawable/bg_health_data_round_gray">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/bg_health_data_round_yellow" />
+
+            <View
+                android:layout_width="8.1dp"
+                android:layout_height="12.9dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ic_calorie_yellow" />
+
+            <TextView
+                android:id="@+id/tv_calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="4455"
+                android:textColor="@android:color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="16dp"
+                android:text="@string/unit_calorie"
+                android:textColor="#ffc425"
+                android:textSize="9.8dp" />
+
+        </FrameLayout>
+
+        <!-- 步数 -->
+        <FrameLayout
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="138dp"
+            android:background="@drawable/bg_health_data_round_gray">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/bg_health_data_round_violet" />
+
+            <View
+                android:layout_width="10.5dp"
+                android:layout_height="12.9dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/ic_step_violet" />
+
+            <TextView
+                android:id="@+id/tv_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="2455"
+                android:textColor="@android:color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="16dp"
+                android:text="@string/unit_step"
+                android:textColor="#e62069"
+                android:textSize="9.8dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sync_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="1dp"
+                android:layout_marginRight="4dp"
+                android:background="#777777" />
+
+            <TextView
+                android:id="@+id/tv_sync_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日尚未同步"
+                android:textColor="@color/tv_secondly"
+                android:textSize="9.8dp" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:background="#777777" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_bind_watch"
+            android:layout_width="104dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_shape_fillet_minute"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/action_bind_watch_main"
+            android:textColor="@android:color/white"
+            android:textSize="11.7dp" />
+    </RelativeLayout>
+</LinearLayout>

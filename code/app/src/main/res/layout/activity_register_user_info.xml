@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout
+        style="@style/Title_Layout"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:drawableLeft="@drawable/ic_back_gray"
+            android:text="@string/register_user_info"
+            android:textColor="@color/tv_link" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rl_register_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <!-- 头像圆圈 -->
+            <cn.hwh.sports.ui.common.CircularImage
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_user_default" />
+
+            <!-- 头像 -->
+            <cn.hwh.sports.ui.common.CircularImage
+                android:id="@+id/civ_avatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp" />
+
+            <!-- 昵称 -->
+            <FrameLayout
+                style="@style/EditLayout_Frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="79dp">
+
+                <TextView
+                    style="@style/EditLayout_Tip"
+                    android:text="@string/hint_nickname" />
+
+                <TextView
+                    android:id="@+id/tv_error_nickname"
+                    style="@style/EditLayout_ErrorTv" />
+
+                <ImageView
+                    android:id="@+id/iv_bg_nickname"
+                    style="@style/EditLayout_Bg_Image" />
+
+                <EditText
+                    android:id="@+id/et_nickname"
+                    style="@style/EditLayout_ET"
+                    android:maxLength="10" />
+            </FrameLayout>
+
+            <!-- 性别 -->
+            <FrameLayout
+                style="@style/EditLayout_Frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="161dp">
+
+                <TextView
+                    style="@style/EditLayout_Tip"
+                    android:text="@string/hint_gender" />
+
+                <ImageView
+                    android:id="@+id/iv_bg_gender"
+                    style="@style/EditLayout_Bg_Image" />
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    style="@style/EditLayout_ET" />
+            </FrameLayout>
+
+            <!-- 地区 -->
+            <FrameLayout
+                style="@style/EditLayout_Frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="243dp">
+
+                <TextView
+                    style="@style/EditLayout_Tip"
+                    android:text="@string/hint_location" />
+
+                <TextView
+                    android:id="@+id/tv_error_location"
+                    style="@style/EditLayout_ErrorTv" />
+
+                <ImageView
+                    android:id="@+id/iv_bg_location"
+                    style="@style/EditLayout_Bg_Image" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    style="@style/EditLayout_ET" />
+            </FrameLayout>
+
+            <!-- 提示 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="335dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="2.8dp"
+                    android:layout_height="13.4dp"
+                    android:background="@drawable/ic_tips" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:text="@string/hint_register_tip"
+                    android:textColor="@color/primary"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <!-- 生日 -->
+            <FrameLayout
+                style="@style/EditLayout_Frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="370dp">
+
+                <TextView
+                    style="@style/EditLayout_Tip"
+                    android:text="@string/hint_birthday" />
+
+                <ImageView
+                    android:id="@+id/iv_bg_birthday"
+                    style="@style/EditLayout_Bg_Image" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    style="@style/EditLayout_ET" />
+            </FrameLayout>
+
+            <!-- 身高 -->
+            <FrameLayout
+                style="@style/EditLayout_Frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="452dp">
+
+                <TextView
+                    style="@style/EditLayout_Tip"
+                    android:text="@string/hint_height" />
+
+                <ImageView
+                    android:id="@+id/iv_bg_height"
+                    style="@style/EditLayout_Bg_Image" />
+
+                <TextView
+                    android:id="@+id/tv_height"
+                    style="@style/EditLayout_ET" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="36dp"
+                    android:text="cm"
+                    android:textColor="@color/tv_tip_normal"
+                    android:textSize="@dimen/tv_tip_normal" />
+            </FrameLayout>
+
+            <!-- 体重 -->
+            <FrameLayout
+                style="@style/EditLayout_Frame"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="535dp">
+
+                <TextView
+                    style="@style/EditLayout_Tip"
+                    android:text="@string/hint_weight" />
+
+                <ImageView
+                    android:id="@+id/iv_bg_weight"
+                    style="@style/EditLayout_Bg_Image" />
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    style="@style/EditLayout_ET" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="36dp"
+                    android:text="kg"
+                    android:textColor="@color/tv_tip_normal"
+                    android:textSize="@dimen/tv_tip_normal" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_register_commit"
+                style="@style/Btn_Commit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="657dp"
+                android:text="@string/complete" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

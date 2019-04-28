@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:minHeight="38dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:layout_width="31dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/tv_mostly"
+        android:textSize="12.7dp"/>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="#f0f0f0">
+
+        <ImageView
+            android:id="@+id/iv_pace"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="72dp"
+            android:src="@drawable/progress_pace" />
+
+        <TextView
+            android:id="@+id/tv_pace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="22dp"
+            android:textColor="@android:color/white"
+            android:textSize="12.7dp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

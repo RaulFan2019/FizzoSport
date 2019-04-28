@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:orientation="vertical">
+    <!-- title -->
+    <RelativeLayout
+        style="@style/Title_Layout"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:drawableLeft="@drawable/ic_back_gray"
+            android:text="@string/register"
+            android:textColor="@color/tv_link" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            style="@style/EditLayout_Frame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="89dp">
+
+            <TextView
+                style="@style/EditLayout_Tip"
+                android:layout_marginTop="6dp"
+                android:text="@string/hint_input_phone" />
+
+            <TextView
+                android:id="@+id/tv_error_phone"
+                style="@style/EditLayout_ErrorTv" />
+
+            <ImageView
+                android:id="@+id/iv_bg_phone"
+                style="@style/EditLayout_Bg_Image"
+                android:layout_marginTop="16dp" />
+
+            <cn.hwh.sports.ui.common.EditTextPhone
+                android:id="@+id/et_phone"
+                style="@style/EditLayout_ET_Phone"
+                android:layout_marginTop="10dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/EditLayout_Frame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="172dp">
+
+            <TextView
+                style="@style/EditLayout_Tip"
+                android:layout_marginTop="6dp"
+                android:text="@string/hint_input_v_code" />
+
+            <TextView
+                android:id="@+id/tv_error_code"
+                style="@style/EditLayout_ErrorTv" />
+
+            <ImageView
+                android:id="@+id/iv_bg_v_code"
+                style="@style/EditLayout_Bg_Image"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/et_v_code"
+                style="@style/EditLayout_ET"
+                android:layout_marginTop="10dp"
+                android:maxLength="4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="36dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <View
+                    style="@style/DividerV"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="22dp" />
+
+                <TextView
+                    android:id="@+id/tv_get_v_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/get_v_code"
+                    android:textColor="@color/primary"
+                    android:textSize="9.7dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/EditLayout_Frame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="254dp">
+
+            <TextView
+                style="@style/EditLayout_Tip"
+                android:layout_marginTop="6dp"
+                android:text="@string/hint_input_pwd" />
+
+            <TextView
+                android:id="@+id/tv_error_pwd"
+                style="@style/EditLayout_ErrorTv" />
+
+            <ImageView
+                android:id="@+id/iv_bg_psw"
+                style="@style/EditLayout_Bg_Image"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/et_psw"
+                style="@style/EditLayout_ET_PWD"
+                android:layout_marginTop="10dp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_complete"
+            style="@style/Btn_Commit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="385dp"
+            android:text="@string/next" />
+    </RelativeLayout>
+</LinearLayout>

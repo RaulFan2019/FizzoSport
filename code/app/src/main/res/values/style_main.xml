@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainAddDataMenuItemLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MainAddDataMenuItemTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">11.7dp</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+    </style>
+
+    <style name="MainWatchDataLl">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="MainWatchDataValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17.6dp</item>
+    </style>
+
+    <style name="MainWatchDataKey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">11.7dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <!-- Guide List -->
+    <style name="MainGuideLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">76dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="MainGuideIcon">
+        <item name="android:layout_width">38.4dp</item>
+        <item name="android:layout_height">38.4dp</item>
+    </style>
+    <style name="MainGuideTitleLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+    <style name="MainGuideTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:textSize">14.7dp</item>
+    </style>
+
+    <style name="MainGuideValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_secondly</item>
+        <item name="android:textSize">13.7dp</item>
+    </style>
+    <style name="MainGuideArrow">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:background">@drawable/ic_arrow_right</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+
+    <!-- User -->
+    <style name="MainUserSetGuideLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MainUserSetGuideName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:textSize">15.7dp</item>
+    </style>
+
+    <style name="MainUserSetGuideValue">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_secondly</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">15.7dp</item>
+    </style>
+
+    <style name="MainUserSetGuideArrow">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:background">@drawable/ic_arrow_right</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="MainUserSetGuideDivider" parent="DividerH">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">#e5e5e5</item>
+    </style>
+    
+    <!--  main sport view -->
+    <style name="MainSportWeekViewLl">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="MainSportWeekViewTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">9.8dp</item>
+    </style>
+
+    <style name="MainSportWeekViewPointView">
+        <item name="android:layout_width">5.7dp</item>
+        <item name="android:layout_height">5.7dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:background">@drawable/ic_point_gray</item>
+    </style>
+</resources>

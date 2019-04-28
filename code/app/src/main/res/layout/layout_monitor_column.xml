@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- value column -->
+    <LinearLayout
+        android:id="@+id/ll_monitor_column_value"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_monitor_column">
+
+        <View
+            android:id="@+id/v_monitor_column_done"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:background="@drawable/ic_monitor_done"/>
+    </LinearLayout>
+
+    <!-- shadow -->
+    <View
+        android:id="@+id/v_monitor_column_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="18.7dp"
+        android:background="#664239" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- map -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map_running"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/include_running_outdoor_gps_info_map"/>
+
+        <View
+            android:id="@+id/btn_close_map"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_close_map"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <include layout="@layout/include_running_outdoor_map_hr_zone" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="105dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_length"
+                    style="@style/RunningOutdoorValueTv"
+                    android:textColor="@color/tv_mostly"/>
+                <TextView
+                    style="@style/RunningOutdoorKeyTv"
+                    android:textColor="@color/tv_mostly"
+                    android:text="@string/unit_length"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/DividerV"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="#e5e5e5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_altitude"
+                    style="@style/RunningOutdoorValueTv"
+                    android:textColor="@color/tv_mostly"/>
+                <TextView
+                    style="@style/RunningOutdoorKeyTv"
+                    android:textColor="@color/tv_mostly"
+                    android:text="@string/name_altitude_with_unit"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

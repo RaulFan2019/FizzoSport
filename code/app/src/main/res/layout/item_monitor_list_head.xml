@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="327dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_item_chart">
+
+        <cn.hwh.sports.ui.common.WeekHistogramView
+            android:id="@+id/whv_detail_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_details_list_tip"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_base"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v_head_tip_img"
+            style="@style/ItemLineHeadTipImg"
+            android:background="@drawable/ic_step_blue"/>
+        <TextView
+            android:id="@+id/tv_head_tip"
+            style="@style/ItemLineHeadTipTv"/>
+    </LinearLayout>
+</LinearLayout>

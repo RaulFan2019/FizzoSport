@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="title_bind_phone">账号绑定</string>
+    <string name="title_login_by_phone">手机登录</string>
+    <string name="title_perfect_user">完善资料</string>
+
+    <string name="title_down_apk">下载安装包</string>
+
+    <string name="title_sporting_submit">记录状态</string>
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 心率柱状图 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/name_power"
+            android:textColor="#777777"
+            android:textSize="11.7dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_workout_big_data">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="锻炼强度(最大心率百分比(%))"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="9.8dp" />
+
+                <TextView
+                    android:id="@+id/tv_power_avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.7dp"
+                    android:textColor="#777777"/>
+                <TextView
+                    android:id="@+id/tv_power_max"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.7dp"
+                    android:textColor="#777777" />
+            </LinearLayout>
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart_power"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:textColor="@color/tv_mostly"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="9.8dp"
+                android:text="@string/name_duration_with_unit"/>
+
+        </LinearLayout>
+
+        <!-- 心率 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/name_hr"
+            android:textColor="#ffb300"
+            android:textSize="11.7dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_workout_big_data">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/name_hr"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="9.8dp" />
+
+                <TextView
+                    android:id="@+id/tv_hr_avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.7dp"
+                    android:textColor="#ffb300"/>
+                <TextView
+                    android:id="@+id/tv_hr_max"
+                    android:layout_marginLeft="26dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.7dp"
+                    android:textColor="#ffb300" />
+            </LinearLayout>
+
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_hr"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:textColor="@color/tv_mostly"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="9.8dp"
+                android:text="@string/name_duration_with_unit"/>
+
+        </LinearLayout>
+
+        <!-- 步频 -->
+        <LinearLayout
+            android:id="@+id/ll_cadence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/name_cadence"
+                android:textColor="#1fdb1b"
+                android:textSize="11.7dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="227dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_workout_big_data">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_cadence"
+                        android:textColor="@color/tv_mostly"
+                        android:textSize="9.8dp" />
+                    <TextView
+                        android:id="@+id/tv_cadence_avg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11.7dp"
+                        android:textColor="#1fdb1b"
+                        android:text="11111"/>
+                    <TextView
+                        android:id="@+id/tv_cadence_max"
+                        android:layout_marginLeft="26dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11.7dp"
+                        android:textColor="#1fdb1b"
+                        android:text="22222"/>
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart_cadence"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:textColor="@color/tv_mostly"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="9.8dp"
+                    android:text="@string/name_duration_with_unit"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

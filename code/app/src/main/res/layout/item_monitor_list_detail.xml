@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_detail"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/bg_base"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_normal_date"
+            style="@style/ItemLineNormalLeftDateTv"
+            android:text="周五" />
+
+        <TextView
+            android:id="@+id/tv_normal_value"
+            style="@style/ItemLineNormalLeftValueTv"
+            android:layout_marginStart="40dp"
+            android:text="123" />
+
+        <TextView
+            android:id="@+id/tv_normal_unit"
+            style="@style/ItemLineNormalLeftUnitTv"
+            android:layout_marginStart="4dp"
+            android:text="步" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_complete_img"
+        style="@style/ItemLineNormalRightDoneImg" />
+
+    <View
+        style="@style/DividerH"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp" />
+</RelativeLayout>

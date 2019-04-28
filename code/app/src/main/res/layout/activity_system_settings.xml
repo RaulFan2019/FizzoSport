@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_base_gray">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/tab_user" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/system_settings" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="33dp"
+        android:background="@android:color/white">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

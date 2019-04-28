@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="name_phone">手机号：</string>
+    <string name="name_verification_code">验证码：</string>
+    <string name="name_nickname">昵称：</string>
+    <string name="name_gender">性别：</string>
+    <string name="name_weight">体重：</string>
+    <string name="name_height">身高：</string>
+    <string name="name_birthday">生日：</string>
+    <string name="name_name">名称</string>
+
+    <string name="name_help">小助手</string>
+
+    <string name="name_consume">消耗</string>
+    <string name="name_consume_with_unit">消耗(千卡)</string>
+    <string name="name_step">步数</string>
+    <string name="name_cadence">步频</string>
+    <string name="name_cadence_with_unit">步频(步/分钟)</string>
+    <string name="name_pace">配速</string>
+    <string name="name_pace_avg">平均配速</string>
+    <string name="name_duration">时长</string>
+    <string name="name_duration_with_unit">用时（分钟）</string>
+    <string name="name_effective_sport_time">有效时长</string>
+    <string name="name_altitude">海拔</string>
+    <string name="name_altitude_with_unit">海拔(米)</string>
+    <string name="name_avg_power">平均强度</string>
+
+    <string name="name_hr">心率</string>
+    <string name="name_hr_avg">平均心率</string>
+    <string name="name_hr_high">最高心率</string>
+    <string name="name_hr_target">心率指标</string>
+    <string name="name_hr_warning">报警心率</string>
+
+    <string name="name_power">锻炼强度</string>
+
+    <string name="name_zone_0">非锻炼区</string>
+    <string name="name_zone_1">热身运动</string>
+    <string name="name_zone_2">有氧减脂</string>
+    <string name="name_zone_3">增强心肺</string>
+    <string name="name_zone_4">提升耐力</string>
+    <string name="name_zone_5">竞技训练</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_workout_list_run"
+    android:layout_width="match_parent"
+    android:layout_height="284dp"
+    android:minHeight="284dp"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:background="@drawable/ic_list_sport_type_1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/run_out_room"
+                android:textColor="@color/tv_mostly"
+                android:textSize="15.7dp" />
+
+            <TextView
+                android:id="@+id/tv_time_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星期二 at 09:03"
+                android:textColor="@color/tv_mostly"
+                android:textSize="11.7dp" />
+
+            <!-- 距离，配速 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_length_small" />
+
+                    <TextView
+                        android:id="@+id/tv_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="26"
+                        android:textColor="@color/tv_mostly"
+                        android:textSize="15.7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit_length"
+                        android:textColor="@color/tv_secondly"
+                        android:textSize="11.7dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_pace_small" />
+
+                    <TextView
+                        android:id="@+id/tv_pace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="126"
+                        android:textColor="@color/tv_mostly"
+                        android:textSize="15.7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit_pace"
+                        android:textColor="@color/tv_secondly"
+                        android:textSize="11.7dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_map"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/accent"/>
+        </LinearLayout>
+
+        <View
+            style="@style/GuideLineArrowRightImg"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="0dp"/>
+    </LinearLayout>
+
+    <View style="@style/DividerH" />
+</LinearLayout>

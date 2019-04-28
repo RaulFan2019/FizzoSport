@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 统计信息 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f5f5"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/FreeEffortSummaryLl">
+
+            <TextView
+                android:id="@+id/tv_duration"
+                style="@style/FreeEffortSummaryTvValue"
+                android:text="28:55" />
+
+            <TextView
+                style="@style/FreeEffortSummaryTvUnit"
+                android:text="@string/unit_minute" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/FreeEffortSummaryLl">
+
+            <TextView
+                android:id="@+id/tv_avg_power"
+                style="@style/FreeEffortSummaryTvValue"
+                android:text="28:55" />
+
+            <TextView
+                style="@style/FreeEffortSummaryTvUnit"
+                android:text="@string/avg_power" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/FreeEffortSummaryLl">
+
+            <TextView
+                android:id="@+id/tv_calorie"
+                style="@style/FreeEffortSummaryTvValue"
+                android:text="105" />
+
+            <TextView
+                style="@style/FreeEffortSummaryTvUnit"
+                android:text="@string/unit_calorie" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/FreeEffortSummaryLl">
+
+            <TextView
+                android:id="@+id/tv_length"
+                style="@style/FreeEffortSummaryTvValue"
+                android:text="28:55" />
+
+            <TextView
+                style="@style/FreeEffortSummaryTvUnit"
+                android:text="公里" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/FreeEffortSummaryLl">
+
+            <TextView
+                android:id="@+id/tv_step_count"
+                style="@style/FreeEffortSummaryTvValue"
+                android:text="28:55" />
+
+            <TextView
+                style="@style/FreeEffortSummaryTvUnit"
+                android:text="步数" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/FreeEffortSummaryLl">
+
+            <TextView
+                android:id="@+id/tv_candence"
+                style="@style/FreeEffortSummaryTvValue"
+                android:text="105" />
+
+            <TextView
+                style="@style/FreeEffortSummaryTvUnit"
+                android:text="@string/unit_candece" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

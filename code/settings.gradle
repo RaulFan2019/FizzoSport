@@ -1,0 +1,1 @@
+include ':app', ':marsdaemon', ':pickviewlibrary', ':view_image_selector', ':mpchartlib', ':umlib', ':dfulib', ':umengPushSDK', ':EventBus', ':baseUtilslib'

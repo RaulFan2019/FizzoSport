@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout
+        style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Title_TitleTv"
+            android:text="@string/title_user_sleep"/>
+
+        <LinearLayout
+            android:id="@+id/ll_right_btn"
+            style="@style/TitleRightBtnLy">
+            <ImageButton
+                android:id="@+id/ibtn_set_sleep_target"
+                style="@style/Title_RightButton"
+                android:src="@drawable/ic_setting"/>
+            <ImageButton
+                android:id="@+id/ibtn_add_sleep_time"
+                style="@style/Title_RightButton"
+                android:src="@drawable/ic_add_more"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_wv_loading"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:progressDrawable="@drawable/pb_web_load"
+            android:padding="0dp"
+            android:progress="50"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:max="100"/>
+    </RelativeLayout>
+
+
+
+    <cn.hwh.sports.ui.common.ObservableWebView
+        android:id="@+id/wv_sleep"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

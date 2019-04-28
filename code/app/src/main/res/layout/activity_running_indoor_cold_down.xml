@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary">
+
+    <RelativeLayout
+        style="@style/Title_Layout">
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/running_indoor_cold_down"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <cn.hwh.sports.ui.indicator.EffortExplainIndicator
+            android:id="@+id/indicator"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/Btn_Commit"
+        android:layout_marginBottom="18dp"
+        android:text="@string/complete"/>
+
+</LinearLayout>

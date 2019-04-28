@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sporting"
+    android:orientation="vertical">
+
+    <!-- 主頁面 -->
+    <cn.hwh.sports.ui.common.RunningOutdoorLayout
+        android:id="@+id/ll_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="322dp">
+
+            <!-- 心率表盘 -->
+            <FrameLayout
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_sporting_hr_dash">
+
+                <ImageView
+                    android:id="@+id/iv_needle"
+                    android:layout_width="130dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_dashboard_pointer" />
+
+                <View
+                    android:layout_width="18.7dp"
+                    android:layout_height="15.3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="62dp"
+                    android:background="@drawable/ic_hr_white" />
+
+                <TextView
+                    android:id="@+id/tv_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="- -"
+                    android:textColor="#cfcfcf"
+                    android:textSize="80dp" />
+
+                <TextView
+                    android:id="@+id/tv_hr_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="62dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="11.7dp" />
+            </FrameLayout>
+
+            <View
+                android:id="@+id/v_sport_map"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_map_sporting" />
+
+            <View
+                android:id="@+id/v_sport_state_sound"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="83dp"
+                android:background="@drawable/ic_voice_on_sporting" />
+        </RelativeLayout>
+
+        <View
+            style="@style/DividerHSporting"/>
+
+        <!-- 其他数据 -->
+        <LinearLayout
+            android:id="@+id/ll_other_data"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/RunningOutdoorDataLl">
+
+                <TextView
+                    android:id="@+id/tv_length"
+                    style="@style/RunningOutdoorValueTv" />
+
+                <TextView
+                    android:id="@+id/tv_length_name"
+                    style="@style/RunningOutdoorKeyTv"
+                    android:text="@string/unit_length" />
+            </LinearLayout>
+
+            <View
+                style="@style/DividerVSporting"
+                android:layout_marginBottom="9.8dp"
+                android:layout_marginTop="9.8dp" />
+
+            <LinearLayout style="@style/RunningOutdoorDataLl">
+
+                <TextView
+                    android:id="@+id/tv_cadence"
+                    style="@style/RunningOutdoorValueTv"
+                    android:text="- -"/>
+
+                <TextView
+                    android:id="@+id/tv_cadence_name"
+                    style="@style/RunningOutdoorKeyTv"
+                    android:text="@string/name_cadence" />
+            </LinearLayout>
+
+            <View
+                style="@style/DividerVSporting"
+                android:layout_marginBottom="9.8dp"
+                android:layout_marginTop="9.8dp"/>
+
+            <LinearLayout style="@style/RunningOutdoorDataLl">
+
+                <TextView
+                    android:id="@+id/tv_pace"
+                    style="@style/RunningOutdoorValueTv"
+                    android:text="- -"/>
+
+                <TextView
+                    android:id="@+id/tv_pace_name"
+                    style="@style/RunningOutdoorKeyTv"
+                    android:text="@string/name_pace" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/DividerHSporting"/>
+
+        <LinearLayout
+            android:id="@+id/ll_duration_data"
+            style="@style/SportingDataLayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_duration"
+                style="@style/RunningOutdoorValueTv"
+                android:text="00:00:00" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_duration_name"-->
+                <!--style="@style/RunningOutdoorKeyTv"-->
+                <!--android:text="@string/name_duration" />-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!-- 控制台 -->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include_pause_btns"
+                layout="@layout/include_running_status_btn_paused"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/include_running_btns"
+                layout="@layout/include_running_status_btn_running" />
+        </FrameLayout>
+    </cn.hwh.sports.ui.common.RunningOutdoorLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_map_fragment_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- 倒计时 -->
+    <include layout="@layout/include_sporting_count_view" />
+</FrameLayout>

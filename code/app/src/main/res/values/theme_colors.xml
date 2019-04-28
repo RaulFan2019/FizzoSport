@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题色 -->
+    <color name="primary">#343339</color>
+    <color name="primaryDark">#343339</color>
+    <color name="accent">#ff4612</color>
+
+    <!-- 主要文字 -->
+    <color name="tv_mostly">#323333</color>
+    <!-- 辅助文字 -->
+    <color name="tv_secondly">#777777</color>
+
+    <!-- 错误文字颜色 -->
+    <color name="tv_error">#ff4612</color>
+
+    <!-- 一般说明文字  -->
+    <color name="tv_tip_normal">#777777</color>
+
+    <!-- 链接文字 -->
+    <color name="tv_link">#777777</color>
+
+    <!-- 输入栏 -->
+    <color name="et_hint">#777777</color>
+    <color name="et_input">#333333</color>
+
+    <!-- button -->
+    <color name="btn_mostly_tv">#ffffff</color>
+    <color name="btn_white_tv">#323333</color>
+</resources>

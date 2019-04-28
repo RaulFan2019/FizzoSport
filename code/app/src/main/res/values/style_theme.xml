@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ThemeCommonLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="ThemeAppStartLoad" parent="ThemeCommonLight">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ThemeFull" parent="ThemeCommonLight">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="ThemeDialogActivity" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    
+</resources>

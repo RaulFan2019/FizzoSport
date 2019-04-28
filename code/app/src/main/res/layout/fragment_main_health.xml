@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <RelativeLayout
+        style="@style/Title_Layout"
+        android:background="@color/primary">
+
+        <View
+            android:id="@+id/v_watch"
+            android:layout_width="18dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9.6dp"
+            android:background="@drawable/ic_fizzo_device" />
+
+        <View
+            android:id="@+id/v_watch_battery"
+            android:layout_width="19dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/v_watch" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout style="@style/TitleRightBtnLy">
+
+            <ImageView
+                android:id="@+id/tv_change_coach"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="?android:attr/actionBarItemBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_personal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <cn.hwh.sports.ui.pulltorefreshlib.PullToSyncLayout
+        android:id="@+id/ptr_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <include layout="@layout/include_sync_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+        <cn.hwh.sports.ui.pulltorefreshlib.PullableScrollView
+            android:id="@+id/sv_health"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- 手表实时状态 -->
+                <include layout="@layout/include_main_health_watch_state"/>
+                <!-- 个人运动统计 -->
+                <include layout="@layout/include_main_health_statistics_info" />
+                <!-- 个人近期运动概况 -->
+                <include layout="@layout/include_main_health_sign" />
+            </LinearLayout>
+        </cn.hwh.sports.ui.pulltorefreshlib.PullableScrollView>
+
+        <include layout="@layout/include_refresh_load_more" />
+    </cn.hwh.sports.ui.pulltorefreshlib.PullToSyncLayout>
+
+
+</LinearLayout>

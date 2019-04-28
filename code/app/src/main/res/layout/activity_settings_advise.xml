@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout
+        style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/system_settings" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/system_settings_advise" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_advise"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/et_input"
+        android:textColor="@color/et_input"
+        android:textColorHint="@color/et_hint"
+        android:gravity="top"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="36dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_edit_advise"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/Btn_Commit"
+        android:layout_marginBottom="28dp"
+        android:text="@string/commit" />
+</LinearLayout>

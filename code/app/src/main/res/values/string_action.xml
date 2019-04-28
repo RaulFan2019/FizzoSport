@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="action_back">返回</string>
+    <string name="action_wx_login">微信授权登录</string>
+    <string name="action_jump_to_phone_login">手机号登录 >></string>
+    <string name="action_get_verification_code">获取验证码</string>
+    <string name="action_login">登录</string>
+    <string name="action_next_step">下一步</string>
+    <string name="action_change_photo">点击更换头像</string>
+    <string name="action_complete">完成</string>
+    <string name="action_start_sport">开始锻炼</string>
+    <string name="action_stop_sport">结束锻炼</string>
+
+    <string name="action_jump_to_workout_list">查看记录</string>
+
+    <string name="action_set_user_photo">修改头像</string>
+
+    <string name="action_app_update">立即升级</string>
+    <string name="action_app_cancel">忽略</string>
+
+    <string name="action_bind_watch_main">绑定手环 ></string>
+
+    <string name="action_cancel">取消</string>
+
+    <string name="action_save">保存</string>
+</resources>

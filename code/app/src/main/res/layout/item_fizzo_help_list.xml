@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg_base"
+    android:layout_height="42dp"
+    android:minHeight="42dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/tv_mostly"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="15.7dp"
+        android:text="2222"/>
+
+    <View style="@style/GuideLineArrowRightImg" />
+
+    <View
+        style="@style/DividerH"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp" />
+
+</RelativeLayout>

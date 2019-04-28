@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- Title -->
+        <RelativeLayout
+            style="@style/Title_Layout"
+            android:background="@color/primary">
+
+            <LinearLayout
+                android:id="@+id/ll_sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <View
+                    android:id="@+id/v_syn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/ic_data_syn" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_sync_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/state_data_un_syn"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_sync_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/Title_TitleTv"
+                android:text="@string/coach_page"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout style="@style/TitleRightBtnLy">
+
+                <ImageView
+                    android:id="@+id/tv_change_personal"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="?android:attr/actionBarItemBackground"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_coach" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_main_coach_chart" />
+
+                <include layout="@layout/include_main_coach_fuc" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_show_role_change_tip"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_show_role_change_tip"
+        android:gravity="center_vertical"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="34dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="学员教练模式切换在这里"
+        android:textSize="13.7dp"
+        android:textColor="@android:color/white"/>
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/tab_user"/>
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/title_body_target"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="33dp"
+        android:background="@color/bg_base"
+        android:orientation="vertical">
+
+        <!-- 锻炼记录 -->
+        <RelativeLayout
+            android:id="@+id/rl_weight"
+            style="@style/GuideLineSetItem">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="@string/sign_body_weight"/>
+
+            <TextView
+                android:id="@+id/tv_weight_target"
+                style="@style/GuideLineRightText"/>
+
+        </RelativeLayout>
+
+        <View style="@style/DividerH" android:layout_marginStart="15dp"/>
+
+        <!-- 锻炼记录 -->
+        <RelativeLayout
+            android:id="@+id/rl_fat_rid"
+            style="@style/GuideLineSetItem">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="@string/sign_body_fat_ratio"/>
+
+            <TextView
+                android:id="@+id/tv_fat_ratio_target"
+                style="@style/GuideLineRightText"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

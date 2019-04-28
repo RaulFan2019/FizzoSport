@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"/>
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/title_workout_rename" />
+
+        <LinearLayout
+            style="@style/TitleRightBtnLy">
+            <TextView
+                android:id="@+id/btn_save"
+                style="@style/Title_RightButton"
+                android:text="@string/action_save"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_mostly"
+            android:textSize="15.7dp"
+            android:text="@string/name_name"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:textColor="@color/tv_mostly"
+            android:textColorHint="@color/tv_secondly"/>
+
+    </LinearLayout>
+</LinearLayout>

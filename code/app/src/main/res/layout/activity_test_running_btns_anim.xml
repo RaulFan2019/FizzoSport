@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/paused_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="144dp"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/pause_page"
+            layout="@layout/include_running_status_btn_paused"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/running_page"
+            layout="@layout/include_running_status_btn_running" />
+    </FrameLayout>
+
+</LinearLayout>

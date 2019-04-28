@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- check phone num -->
+    <string name="Error_Check_Phonenum_Empty">手机号码不能为空!</string>
+    <string name="Error_Check_Phonenum_Illegal">请输入正确的手机号码!</string>
+    <string name="Error_Check_Password_Empty">密码不能为空!</string>
+    <string name="Error_Check_Password_Length">密码长度必须在6~16范围内</string>
+    <string name="Error_Check_Password_Confirm">两次密码不一致</string>
+    <string name="Error_Check_Register_Exist">手机号码已注册</string>
+    <string name="Error_Check_Bind_Exist">手机号码已注册，若要绑定微信请在设置中绑定。</string>
+    <string name="Error_Check_Login_NotExist">帐号未注册</string>
+    <string name="Error_Check_VcCode_Empty">验证码不能为空</string>
+    <string name="Error_Check_VcCode_Length">验证码长度为4</string>
+    <string name="Error_Check_Password_Same">两次输入的密码不一致</string>
+    <string name="Error_Check_Nickname_Empty">昵称不能为空</string>
+    <string name="Error_Check_Nickname_Length">昵称长度少于10内</string>
+    <string name="Error_Check_Avatar_Empty">请设置个人头像</string>
+    <string name="Error_Check_Invite_Empty">邀请码不能为空!</string>
+    <string name="Error_Check_Invite_Length">邀请码长度为4位!</string>
+    <string name="Error_Check_Invite_Error">邀请码只能是字母和数字!</string>
+    <string name="Error_Check_True_Name_Empty">姓名不能为空</string>
+    <string name="Error_Check_Email_Empty">邮箱不能为空</string>
+    <string name="Error_Check_Email_Error">邮箱格式不正确</string>
+    <string name="Error_Check_max_hr_Empty">最大心率不能为空</string>
+    <string name="Error_Check_max_hr_Error">正常最大心率范围120~240</string>
+    <string name="Error_Check_max_hr_format">最大心率只能是数字</string>
+    <string name="Error_Check_rest_hr_Empty">静息心率不能为空</string>
+    <string name="Error_Check_rest_hr_Error">正常静息心率范围60~100</string>
+    <string name="Error_Check_rest_hr_format">静息心率只能是数字</string>
+    <string name="Error_Check_Target_Zero">目标不能为0</string>
+    <string name="Error_Check_Target_Format">必须是数字</string>
+    <string name="Error_Check_Step_Empty">步数不能为空</string>
+    <string name="Error_Check_Length_Empty">距离不能为空</string>
+    <string name="Error_Check_Length_Format">距离必须是数字</string>
+    <string name="Error_Check_Calorie_Empty">卡路里不能为空</string>
+    <string name="Error_Check_Point_Empty">锻炼点数不能为空</string>
+    <string name="Error_Check_Sport_Time_Empty">活跃时间不能为空</string>
+    <string name="Error_Check_hr_Empty">输入不能为空</string>
+    <string name="Error_Check_hr_format">输入只能为数字</string>
+    <string name="Error_Check_hr_Error">输入心率范围40~220</string>
+</resources>

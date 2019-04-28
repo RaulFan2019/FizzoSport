@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/primary">
+
+    <TextView
+        android:id="@+id/tv_step_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:textSize="@dimen/tv_tip_import_active"
+        android:textColor="@android:color/white"
+        android:text="正在同步运动记录"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_tip_normal"
+        android:text="请将设备靠近手机,请勿退出APP"/>
+
+
+    <FrameLayout
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="51dp">
+
+        <View
+            android:id="@+id/v_update_outside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_update_device_scan_outside"/>
+
+        <View
+            android:id="@+id/v_update_inside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_update_device_scan_inside"/>
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textSize="49dp"
+            android:textColor="@android:color/white"
+            android:text="0%"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/btn_pause_update"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/tv_secondly"
+            android:textSize="@dimen/tv_link_small"
+            android:text="暂不升级 >"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_device_update_finish_normal"
+        android:visibility="gone"/>
+
+</LinearLayout>

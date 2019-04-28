@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="341dp"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_shape_fillet_white">
+
+
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_running_map_zone">
+        <TextView
+            android:id="@+id/tv_zone_0"
+            style="@style/RunningMapZoneValueTv"/>
+        <TextView
+            android:id="@+id/tv_zone_1"
+            style="@style/RunningMapZoneValueTv"/>
+        <TextView
+            android:id="@+id/tv_zone_2"
+            style="@style/RunningMapZoneValueTv"/>
+        <TextView
+            android:id="@+id/tv_zone_3"
+            style="@style/RunningMapZoneValueTv"/>
+        <TextView
+            android:id="@+id/tv_zone_4"
+            style="@style/RunningMapZoneValueTv"/>
+        <TextView
+            android:id="@+id/tv_zone_5"
+            style="@style/RunningMapZoneValueTv"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/RunningMapZoneNameTv"
+            android:text="@string/name_zone_0"/>
+        <TextView
+            style="@style/RunningMapZoneNameTv"
+            android:text="@string/name_zone_1"/>
+        <TextView
+            style="@style/RunningMapZoneNameTv"
+            android:text="@string/name_zone_2"/>
+        <TextView
+            style="@style/RunningMapZoneNameTv"
+            android:text="@string/name_zone_3"/>
+        <TextView
+            style="@style/RunningMapZoneNameTv"
+            android:text="@string/name_zone_4"/>
+        <TextView
+            style="@style/RunningMapZoneNameTv"
+            android:text="@string/name_zone_5"/>
+    </LinearLayout>
+
+</LinearLayout>

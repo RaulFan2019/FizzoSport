@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View style="@style/DividerH" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:orientation="horizontal">
+        <!-- 每周锻炼 -->
+        <LinearLayout
+            android:id="@+id/ll_week_sport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_week_sport"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_week_sport_5_0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_week_sport_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="29dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_health_week_sport_tip_1"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_week_sport_do"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="29dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_health_week_sport_tip_2"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_health_week_sport_tip_3"
+                android:textColor="@color/tv_mostly"
+                android:textSize="15.7dp" />
+        </LinearLayout>
+
+        <View style="@style/DividerV" />
+
+        <!-- 助手 -->
+        <LinearLayout
+            android:id="@+id/ll_help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="49dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/ic_main_help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:text="FIZZO小助手"
+                android:textColor="@color/tv_mostly"
+                android:textSize="15.7dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/DividerH" android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!-- 体重 -->
+        <LinearLayout
+            android:id="@+id/ll_weight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="52dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_main_health_weight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="29dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_weight"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/DividerV" />
+
+        <!--  静息心率 -->
+        <LinearLayout
+            android:id="@+id/ll_rest_hr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_main_health_hr" />
+
+            <TextView
+                android:id="@+id/tv_rest_hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="0"
+                android:textColor="@color/tv_mostly"
+                android:textSize="29dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_health_rest_hr"
+                android:textColor="@color/tv_mostly"
+                android:textSize="15.7dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/DividerH"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:orientation="horizontal">
+        <!-- 体征趋势 -->
+        <LinearLayout
+            android:id="@+id/ll_health_sign"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="51.8dp"
+                android:layout_height="52.7dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_main_health_sign" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:text="@string/main_health_sign"
+                android:textColor="@color/tv_mostly"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerV" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

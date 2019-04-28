@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_run_running_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="00:00:00"
+            android:textColor="#222222"
+            android:textSize="39dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/duration"
+            android:textColor="#2e2e2e"
+            android:textSize="14.7dp" />
+    </LinearLayout>
+
+    <View
+        style="@style/DividerH"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_running_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="0.00"
+            android:textColor="#222222"
+            android:textSize="116dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/run_key_length"
+            android:textColor="#2e2e2e"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <View style="@style/DividerH" />
+
+    <!-- 实时数据 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/RunDataLayout">
+            
+            <TextView
+                style="@style/RunDataLayoutValue"
+                android:text="111"/>
+            <TextView
+                style="@style/RunDataLayoutKey"
+                android:text="@string/hr"/>
+        </LinearLayout>
+        <View
+            style="@style/DividerV"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+        <LinearLayout
+            style="@style/RunDataLayout">
+
+            <TextView
+                style="@style/RunDataLayoutValue"
+                android:text="4456"/>
+            <TextView
+                style="@style/RunDataLayoutKey"
+                android:text="@string/stepCount"/>
+        </LinearLayout>
+        <View
+            style="@style/DividerV"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+        <LinearLayout
+            style="@style/RunDataLayout">
+
+            <TextView
+                style="@style/RunDataLayoutValue"
+                android:text="100"/>
+            <TextView
+                style="@style/RunDataLayoutKey"
+                android:text="@string/cadence"/>
+        </LinearLayout>
+        <View
+            style="@style/DividerV"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+        <LinearLayout
+            style="@style/RunDataLayout">
+
+            <TextView
+                style="@style/RunDataLayoutValue"
+                android:text="05:55"/>
+            <TextView
+                style="@style/RunDataLayoutKey"
+                android:text="@string/pace"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

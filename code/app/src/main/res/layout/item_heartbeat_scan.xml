@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_device"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/tv_normal"
+            android:textSize="14.5dp"
+            android:text="DDAS"/>
+
+        <View
+            android:id="@+id/v_connecting"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:background="@drawable/ic_loading" />
+
+        <View
+            android:id="@+id/v_normal"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/ic_selected"
+            android:visibility="gone"/>
+        
+        <View
+            android:id="@+id/v_signal"
+            android:layout_width="21.6dp"
+            android:layout_height="10.6dp"
+            android:background="@drawable/ic_signal_1"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        style="@style/DividerH"/>
+
+</LinearLayout>

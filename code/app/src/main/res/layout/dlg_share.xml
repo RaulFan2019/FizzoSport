@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_wechart_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="?android:attr/actionBarItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_wechat_c" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/share_wechat_c"
+                android:textColor="#242424"
+                android:textSize="12.7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_wechart_moment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="?android:attr/actionBarItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ic_wechat_moment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/share_wechat_moment"
+                android:textColor="#242424"
+                android:textSize="12.7dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#fafafa"
+        android:text="@string/cancel"
+        android:textColor="#242424"
+        android:textSize="17.7dp" />
+</LinearLayout>

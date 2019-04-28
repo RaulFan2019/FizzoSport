@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text=""/>
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/title_bind_phone" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="84dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/ic_logo_white" />
+
+    <!-- 输入页面 -->
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_shape_fillet_white"
+        android:orientation="vertical">
+        <!-- 手机号 -->
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            style="@style/InputLayoutBase"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/InputLayoutNameTv"
+                android:text="@string/name_phone"/>
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/InputLayoutEdit"
+                android:maxLength="11"
+                android:inputType="phone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <!-- 验证码 -->
+            <LinearLayout
+                android:id="@+id/ll_verification_code"
+                style="@style/InputLayoutBase"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/InputLayoutNameTv"
+                    android:text="@string/name_verification_code"/>
+
+                <EditText
+                    android:id="@+id/et_verification_code"
+                    style="@style/InputLayoutEdit"
+                    android:maxLength="4"
+                    android:inputType="phone"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_get_verification_code"
+                android:layout_width="72dp"
+                android:layout_height="43dp"
+                android:textSize="11.7dp"
+                android:background="@drawable/selector_shape_fillet_accent"
+                android:text="@string/action_get_verification_code"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="6dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/BtnBigAccent"
+        android:text="@string/action_next_step"
+        android:layout_marginBottom="76dp"/>
+
+</LinearLayout>

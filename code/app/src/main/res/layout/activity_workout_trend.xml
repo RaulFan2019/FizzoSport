@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_base">
+
+    <!-- title -->
+    <RelativeLayout
+        style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <com.rey.material.widget.TabPageIndicator
+                android:id="@+id/tbi_group"
+                style="@style/WorkoutTrendTabIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity = "center_horizontal"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="tip_must_update_app">软件版本过低，请升级后使用！</string>
+    <string name="tip_normal_update_watch">亲，手环准备升级了呢！</string>
+    <string name="tip_normal_update_must">手环固件版本过低</string>
+    <string name="tip_effective_time">2015年1月，美国心脏协会（AHA）推荐成年人每周至少进行5次30分钟以上中等强度的运动，可以有效降低患心脏病和中风的风险。\nFIZZO能准确记录您运动时的心率，并将锻炼时心率大于60%最大心率的部分统计为有效时长。</string>
+</resources>

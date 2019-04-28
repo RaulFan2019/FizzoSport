@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="value_man">男</string>
+    <string name="value_women">女</string>
+
+    <string name="value_relaxed">轻松</string>
+    <string name="value_tired">超累</string>
+</resources>

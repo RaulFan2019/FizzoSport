@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dp"
+    android:layout_height="192dp"
+    android:background="@drawable/bg_shape_fillet_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_marginTop="28dp"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:background="@drawable/ic_app_update"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/tv_mostly"
+        android:textSize="15.7dp"
+        android:text="@string/tip_must_update_app"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_marginTop="14dp"
+        android:layout_width="235dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_dlg_rect_btn_accent"
+        android:textColor="@android:color/white"
+        android:textSize="15.7dp"
+        android:text="@string/action_app_update"/>
+</LinearLayout>

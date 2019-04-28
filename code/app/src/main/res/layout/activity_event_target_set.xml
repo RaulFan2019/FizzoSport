@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/tab_user" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="每日活动" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/GuideLineTitleTv"
+        android:text="每日活动" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <!-- 步数 -->
+        <RelativeLayout
+            android:id="@+id/rl_sign_step_target_set"
+            style="@style/GuideLineSetItem">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="@string/sign_step_target_set" />
+
+            <TextView
+                android:id="@+id/tv_step_target"
+                style="@style/GuideLineRightText" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+
+        <!-- 距离 -->
+        <RelativeLayout
+            android:id="@+id/rl_sign_distance_target_set"
+            style="@style/GuideLineSetItem">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="@string/sign_distance_target_set" />
+
+            <TextView
+                android:id="@+id/tv_distance_target"
+                style="@style/GuideLineRightText" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+        <!-- 消耗卡路里数 -->
+        <RelativeLayout
+            android:id="@+id/rl_sign_calorie_target_set"
+            style="@style/GuideLineSetItem">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="@string/sign_calorie_target_set" />
+
+            <TextView
+                android:id="@+id/tv_calorie_target"
+                style="@style/GuideLineRightText" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+        <!-- 锻炼点数 -->
+        <RelativeLayout
+            android:id="@+id/rl_sign_sport_point_target_set"
+            style="@style/GuideLineSetItem">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="@string/sign_sport_point_target_set" />
+
+            <TextView
+                android:id="@+id/tv_sport_point_target"
+                style="@style/GuideLineRightText" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+        <!-- 活跃分钟数 -->
+        <RelativeLayout
+            android:id="@+id/rl_sign_active_time_target_set"
+            style="@style/GuideLineSetItem">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="@string/sign_active_time_target_set" />
+
+            <TextView
+                android:id="@+id/tv_active_time_target"
+                style="@style/GuideLineRightText" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

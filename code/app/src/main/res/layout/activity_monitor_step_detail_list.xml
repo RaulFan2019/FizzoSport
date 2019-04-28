@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/title_step_detail_list" />
+
+        <LinearLayout style="@style/TitleRightBtnLy">
+
+            <ImageButton
+                android:id="@+id/btn_setting"
+                style="@style/Title_RightButton"
+                android:src="@drawable/ic_setting" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.hwh.sports.ui.pulltorefreshlib.PullToRefreshLayout
+            android:id="@+id/ptr_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/include_refresh_head" />
+
+            <cn.hwh.sports.ui.pulltorefreshlib.PullablePinnedSectionListView
+                android:id="@+id/lv_step"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+
+            <include layout="@layout/include_refresh_load_more" />
+
+        </cn.hwh.sports.ui.pulltorefreshlib.PullToRefreshLayout>
+
+        <cn.hwh.sports.ui.common.MyLoadingView
+            android:id="@+id/v_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sporting"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="341dp">
+
+            <!-- 心率表盘 -->
+            <FrameLayout
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_sporting_hr_dash">
+
+                <ImageView
+                    android:id="@+id/iv_needle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="126dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_dashboard_pointer" />
+
+                <View
+                    android:layout_width="18.7dp"
+                    android:layout_height="15.3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="62dp"
+                    android:background="@drawable/ic_hr_white" />
+
+                <TextView
+                    android:id="@+id/tv_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:textColor="#cfcfcf"
+                    android:text="- -"
+                    android:textSize="80dp" />
+
+                <TextView
+                    android:id="@+id/tv_hr_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="62dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="11.7dp" />
+            </FrameLayout>
+
+            <View
+                android:id="@+id/v_sport_state_sound"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/ic_voice_on_sporting" />
+
+        </RelativeLayout>
+
+        <View style="@style/DividerH"
+            android:background="#5b5b60"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp">
+
+            <!-- 消耗 -->
+            <LinearLayout style="@style/SportingDataLayout">
+
+                <TextView
+                    android:id="@+id/tv_calorie"
+                    style="@style/SportingDataTvValue"
+                    android:text="0" />
+
+                <TextView
+                    style="@style/SportingDataTvName"
+                    android:text="@string/unit_calorie" />
+            </LinearLayout>
+
+            <View
+                style="@style/DividerV"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#5b5b60"/>
+
+            <!-- 时长 -->
+            <LinearLayout style="@style/SportingDataLayout">
+
+                <TextView
+                    android:id="@+id/tv_duration"
+                    style="@style/SportingDataTvValue"
+                    android:text="00:00:00" />
+
+                <TextView
+                    style="@style/SportingDataTvName"
+                    android:text="@string/name_duration" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/DividerH"
+            android:background="#5b5b60"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_stop_sport"
+            style="@style/BtnBigAccent"
+            android:layout_marginBottom="19dp"
+            android:text="@string/action_stop_sport" />
+
+    </LinearLayout>
+
+    <!-- 倒计时数字  -->
+    <LinearLayout
+        android:id="@+id/ll_count_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary">
+
+        <TextView
+            android:id="@+id/tv_count_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/accent"
+            android:textSize="98dp" />
+    </LinearLayout>
+</FrameLayout>

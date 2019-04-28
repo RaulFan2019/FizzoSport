@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\workspace\company porject\FizoApp\SourceCode2.0\umengPushSDK\assets"/><source path="D:\workspace\company porject\FizoApp\SourceCode2.0\umengPushSDK\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\workspace\company porject\FizoApp\SourceCode2.0\umengPushSDK\build-types\release\assets"/></dataSet></merger>

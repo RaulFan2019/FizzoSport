@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="262dp"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<cn.hwh.sports.ui.dashboard.SportingHrDashBoard-->
+            <!--android:id="@+id/dashboardView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/aa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llyt_speed"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/iv_tester"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/bg_tester" />
+
+        <ImageView
+            android:id="@+id/iv_needle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_heart"
+            android:layout_alignRight="@+id/iv_heart"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginRight="13.0dip"
+            android:layout_marginTop="8.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_dashboard_pointer" />
+
+        <ImageView
+            android:id="@id/iv_heart"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_alignBottom="@id/iv_tester"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_heart" />
+    </RelativeLayout>
+
+
+</LinearLayout>

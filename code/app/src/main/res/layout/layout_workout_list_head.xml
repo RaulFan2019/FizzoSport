@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/primary">
+        <!-- 本周锻炼时长 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14.7dp"
+                android:text="@string/this_week"/>
+
+            <TextView
+                android:id="@+id/tv_duration_this_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14.7dp"
+                android:gravity="right"
+                android:text="1 小时 7 分钟"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_target_big"
+            android:layout_width="84dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:id="@+id/tv_week_list_head_tip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:textSize="15.7dp"
+            android:text="5天中的第2天"/>
+        <TextView
+            android:id="@+id/tv_week_list_head_tip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="15.7dp"
+            android:text="第二天圆满完成。干的漂亮！"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@color/bg_base"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <View
+            android:id="@+id/v_workout_head_target"
+            android:layout_width="29dp"
+            android:layout_height="28dp"
+            android:background="@drawable/ic_week_sport_5_5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_workout_list_head_tip_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14.7dp"
+                android:textColor="#2e2e2e"
+                android:text="@string/workout_list_head_tip_1"/>
+            <TextView
+                android:id="@+id/tv_workout_list_head_tip_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14.7dp"
+                android:textColor="#2e2e2e"
+                android:text="@string/workout_list_head_tip_2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/DividerH"
+        android:layout_marginLeft="15dp"/>
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_back"-->
+        <!--style="@style/Title_BackButton" />-->
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/tab_user" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/bg_base"
+                android:orientation="vertical">
+
+                <!-- 用户 -->
+                <RelativeLayout
+                    android:id="@+id/rl_user_info_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center_vertical">
+
+                    <cn.hwh.sports.ui.common.CircularImage
+                        android:id="@+id/civ_user_avatar"
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/ic_user_default" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="69dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_user_nickname"
+                            style="@style/FormTitle"
+                            android:text="FIZZO智能用户" />
+
+                        <TextView
+                            android:id="@+id/tv_user_join_time"
+                            style="@style/FormTitleSecondary"
+                            android:text="加入时间 2016年11月17日" />
+                    </LinearLayout>
+
+                    <View style="@style/GuideLineArrowRightImg" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/DividerH"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+                <!-- 设备 -->
+                <RelativeLayout
+                    android:id="@+id/rl_user_device_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:id="@+id/tv_add_device_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/main_user_add_device"
+                        android:textColor="@color/tv_mostly"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_device_img"
+                        android:layout_width="36dp"
+                        android:layout_height="46dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/ic_fizzo_device"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_device_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="69dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_device_name"
+                            style="@style/FormTitle"
+                            android:text="FIZZO智能手环" />
+
+                        <TextView
+                            android:id="@+id/tv_device_syn_time"
+                            style="@style/FormTitleSecondary"
+                            android:text="已于 今天18:52进行同步"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/iv_device_arrow"
+                        style="@style/GuideLineArrowRightImg"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/GuideLineTitleTv"
+                android:text="@string/main_tip_user_set" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_base"
+                android:orientation="vertical">
+
+                <!-- 锻炼记录 -->
+                <RelativeLayout
+                    android:id="@+id/rl_user_sport_record_set"
+                    style="@style/GuideLineSetItem">
+
+                    <TextView
+                        style="@style/GuideLineSetItemTv"
+                        android:text="@string/main_user_set_item_sport" />
+
+                    <View style="@style/GuideLineArrowRightImg" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/DividerH"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+                <!-- 关于我们 -->
+                <RelativeLayout
+                    android:id="@+id/rl_about_us"
+                    style="@style/GuideLineSetItemHeight">
+
+                    <TextView
+                        style="@style/GuideLineSetItemTv"
+                        android:text="@string/system_settings_about_us" />
+
+                    <View style="@style/GuideLineArrowRightImg" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/DividerH"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+                <!-- 建议反馈 -->
+                <RelativeLayout
+                    android:id="@+id/rl_advice"
+                    style="@style/GuideLineSetItemHeight">
+
+                    <TextView
+                        style="@style/GuideLineSetItemTv"
+                        android:text="@string/system_settings_advise" />
+
+                    <View style="@style/GuideLineArrowRightImg" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView style="@style/GuideLineTitleTv" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:orientation="horizontal">
+        <!-- 学员教练报告 -->
+        <LinearLayout
+            android:id="@+id/ll_student_report"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_student_report" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:text="@string/main_coach_student_report"
+                android:textColor="@color/tv_mostly"
+                android:textSize="@dimen/tv_chip_title" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerV" />
+        <!-- 学员管理 -->
+        <LinearLayout
+            android:id="@+id/ll_student_manage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <View
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_student_manage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:text="@string/main_coach_student_manage"
+                android:textColor="@color/tv_mostly"
+                android:textSize="@dimen/tv_chip_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/DividerH"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:orientation="horizontal">
+        <!-- 私教助手 -->
+        <LinearLayout
+            android:id="@+id/ll_personal_teach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/ic_personal_assistant" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:text="@string/main_coach_personal_teach_assistant"
+                android:textColor="@color/tv_mostly"
+                android:textSize="@dimen/tv_chip_title" />
+        </LinearLayout>
+
+        <View style="@style/DividerV" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

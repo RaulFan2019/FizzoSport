@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333333">
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:src="@drawable/ic_sync_close"
+        android:background = "?android:attr/actionBarItemBackground"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_marginTop="210dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00bfa5"
+        android:textSize="11.7dp"
+        android:text="44/66"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sync_percent"
+            android:textSize="19dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="9.8dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/progress_bg_sync" />
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="3.8dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/progress_sync" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9d9d9d"
+            android:textSize="10dp"
+            android:text="@string/sync_watch_workout_tip_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9d9d9d"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/sync_watch_workout_tip_2"/>
+    </LinearLayout>
+
+</RelativeLayout>

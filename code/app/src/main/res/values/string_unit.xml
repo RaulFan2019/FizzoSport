@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="unit_step">步数</string>
+    <string name="unit_length">公里</string>
+    <string name="unit_calorie">千卡</string>
+    <string name="unit_point">点</string>
+    <string name="unit_minute">分钟</string>
+    <string name="unit_hour">小时</string>
+    <string name="unit_weight">公斤</string>
+    <string name="unit_weight_en">kg</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_pace">配速</string>
+    <string name="unit_hr">bpm</string>
+
+    <string name="unit_speed">公里/小时</string>
+    <string name="unit_candece">步频</string>
+
+</resources>

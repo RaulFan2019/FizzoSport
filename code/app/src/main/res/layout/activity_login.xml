@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_fizzo" />
+
+
+    <FrameLayout
+        style="@style/EditLayout_Frame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp">
+
+        <TextView
+            style="@style/EditLayout_Tip"
+            android:text="@string/hint_input_phone" />
+
+        <TextView
+            android:id="@+id/tv_error_phone"
+            style="@style/EditLayout_ErrorTv"/>
+
+        <ImageView
+            android:id="@+id/iv_bg_phone"
+            style="@style/EditLayout_Bg_Image" />
+
+        <cn.hwh.sports.ui.common.EditTextPhone
+            android:id="@+id/et_phone"
+            style="@style/EditLayout_ET_Phone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/EditLayout_Frame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="208dp">
+
+        <TextView
+            style="@style/EditLayout_Tip"
+            android:text="@string/hint_input_pwd" />
+
+        <TextView
+            android:id="@+id/tv_error_pwd"
+            style="@style/EditLayout_ErrorTv"/>
+
+        <ImageView
+            android:id="@+id/iv_bg_psw"
+            style="@style/EditLayout_Bg_Image" />
+
+        <EditText
+            android:id="@+id/et_psw"
+            style="@style/EditLayout_ET_PWD" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="292dp"
+        android:text="@string/forget_pwd"
+        android:textColor="@color/tv_link"
+        android:textSize="@dimen/tv_link_small"
+        android:autoLink="all"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Btn_Commit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="355dp"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/register_todo"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/tv_link_normal"
+        android:layout_marginBottom="39dp"/>
+
+</RelativeLayout>

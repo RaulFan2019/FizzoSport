@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="248dp"
+    android:background="@color/primary">
+
+    <!-- 星期文本区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26.8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp">
+
+        <TextView
+            android:id="@+id/tv_week_0"
+            style="@style/MonitorListHeadWeekTv"
+            android:text="一"/>
+
+        <View style="@style/MonitorListHeadSpaceV" />
+
+        <TextView
+            android:id="@+id/tv_week_1"
+            style="@style/MonitorListHeadWeekTv"
+            android:text="二"/>
+
+        <View style="@style/MonitorListHeadSpaceV" />
+
+        <TextView
+            android:id="@+id/tv_week_2"
+            style="@style/MonitorListHeadWeekTv"
+            android:text="三"/>
+
+        <View style="@style/MonitorListHeadSpaceV" />
+
+        <TextView
+            android:id="@+id/tv_week_3"
+            style="@style/MonitorListHeadWeekTv"
+            android:text="四"/>
+
+        <View style="@style/MonitorListHeadSpaceV" />
+
+        <TextView
+            android:id="@+id/tv_week_4"
+            style="@style/MonitorListHeadWeekTv"
+            android:text="五"/>
+
+        <View style="@style/MonitorListHeadSpaceV" />
+
+        <TextView
+            android:id="@+id/tv_week_5"
+            style="@style/MonitorListHeadWeekTv"
+            android:text="六"/>
+
+        <View style="@style/MonitorListHeadSpaceV" />
+
+        <TextView
+            android:id="@+id/tv_week_6"
+            style="@style/MonitorListHeadWeekTv"
+            android:textColor="@color/tv_mostly"
+            android:background="@drawable/ic_monitor_selected"
+            android:text="日"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_gravity="bottom">
+
+        <!-- Line 区域 -->
+        <!-- max 线 -->
+        <LinearLayout
+            style="@style/MonitorListHeadLine">
+            <TextView
+                android:id="@+id/tv_max_line"
+                style="@style/MonitorListHeadLineTv"
+                android:layout_width="wrap_content"
+                android:text="20K"/>
+            <View
+                style="@style/MonitorListHeadLineLine"/>
+        </LinearLayout>
+        <!-- middle 线 -->
+        <LinearLayout
+            style="@style/MonitorListHeadLine"
+            android:layout_marginTop="86dp">
+            <TextView
+                android:id="@+id/tv_middle_line"
+                style="@style/MonitorListHeadLineTv"
+                android:layout_width="wrap_content"
+                android:text="10K"/>
+            <View
+                style="@style/MonitorListHeadLineLine"/>
+        </LinearLayout>
+        <!-- 0 线 -->
+        <LinearLayout
+            style="@style/MonitorListHeadLine"
+            android:layout_marginTop="176dp">
+            <TextView
+                style="@style/MonitorListHeadLineTv"
+                android:text="0"/>
+            <View
+                style="@style/MonitorListHeadLineLine"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="41.2dp"
+            android:paddingRight="41.2dp"
+            android:paddingTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <cn.hwh.sports.ui.common.MonitorColumnView
+                android:id="@+id/cv_0"
+                android:layout_width="27.8dp"
+                android:layout_height="match_parent"/>
+            <View style="@style/MonitorListHeadSpaceV" />
+            <cn.hwh.sports.ui.common.MonitorColumnView
+                android:id="@+id/cv_1"
+                android:layout_width="27.8dp"
+                android:layout_height="match_parent"/>
+            <View style="@style/MonitorListHeadSpaceV" />
+            <cn.hwh.sports.ui.common.MonitorColumnView
+                android:id="@+id/cv_2"
+                android:layout_width="27.8dp"
+                android:layout_height="match_parent"/>
+            <View style="@style/MonitorListHeadSpaceV" />
+            <cn.hwh.sports.ui.common.MonitorColumnView
+                android:id="@+id/cv_3"
+                android:layout_width="27.8dp"
+                android:layout_height="match_parent"/>
+            <View style="@style/MonitorListHeadSpaceV" />
+            <cn.hwh.sports.ui.common.MonitorColumnView
+                android:id="@+id/cv_4"
+                android:layout_width="27.8dp"
+                android:layout_height="match_parent"/>
+            <View style="@style/MonitorListHeadSpaceV" />
+            <cn.hwh.sports.ui.common.MonitorColumnView
+                android:id="@+id/cv_5"
+                android:layout_width="27.8dp"
+                android:layout_height="match_parent"/>
+            <View style="@style/MonitorListHeadSpaceV" />
+            <cn.hwh.sports.ui.common.MonitorColumnView
+                android:id="@+id/cv_6"
+                android:layout_width="27.8dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <!-- target 线 -->
+        <LinearLayout
+            android:id="@+id/ll_target"
+            style="@style/MonitorListHeadLine"
+            android:layout_marginTop="130dp">
+            <TextView
+                android:id="@+id/tv_target_line"
+                style="@style/MonitorListHeadLineTv"
+                android:layout_width="wrap_content"
+                android:background="@drawable/ic_monitor_target"
+                android:textColor="@color/accent"
+                android:text="12K"/>
+            <View
+                style="@style/MonitorListHeadLineLine"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

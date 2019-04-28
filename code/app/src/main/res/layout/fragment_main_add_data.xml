@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="#E6ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/ll_add_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <View style="@style/DividerH" android:background="#e5e5e5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@android:color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_record_run_indoor"
+                style="@style/MainAddDataMenuItemLayout">
+
+                <View
+                    android:layout_width="41.7dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_record_run_indoor"/>
+
+                <TextView
+                    style="@style/MainAddDataMenuItemTv"
+                    android:text="@string/main_record_run_indoor"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_record_sport"
+                style="@style/MainAddDataMenuItemLayout">
+
+                <View
+                    android:layout_width="41.7dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_record_sport_indoor"/>
+
+                <TextView
+                    style="@style/MainAddDataMenuItemTv"
+                    android:text="@string/main_record_sport"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_record_weight"
+                style="@style/MainAddDataMenuItemLayout"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@drawable/ic_main_health_weight"/>
+
+                <TextView
+                    style="@style/MainAddDataMenuItemTv"
+                    android:text="@string/main_record_weight"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_record_sleep"
+                style="@style/MainAddDataMenuItemLayout">
+
+                <View
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@drawable/ic_main_health_sleep"/>
+
+                <TextView
+                    style="@style/MainAddDataMenuItemTv"
+                    android:text="@string/main_record_sleep"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_record_run"
+                style="@style/MainAddDataMenuItemLayout"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="42dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/ic_record_run"/>
+
+                <TextView
+                    style="@style/MainAddDataMenuItemTv"
+                    android:text="@string/main_record_run"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainAddDataMenuItemLayout">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MainAddDataMenuItemLayout">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

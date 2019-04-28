@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"/>
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="锻炼播报" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/GuideLineTitleTv"
+        android:text="播报频率" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_base"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_1_mint"
+            style="@style/MainUserSetGuideLayout">
+
+            <TextView
+                style="@style/MainUserSetGuideName"
+                android:text="1分钟" />
+
+            <TextView
+                style="@style/MainUserSetGuideValue" />
+
+            <View
+                android:id="@+id/v_select_1"
+                style="@style/MainUserSetGuideArrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/ic_selected"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_2_mint"
+            style="@style/MainUserSetGuideLayout">
+
+            <TextView
+                style="@style/MainUserSetGuideName"
+                android:text="2分钟" />
+
+            <TextView
+                style="@style/MainUserSetGuideValue" />
+
+            <View
+                android:id="@+id/v_select_2"
+                style="@style/MainUserSetGuideArrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/ic_selected"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_5_mint"
+            style="@style/MainUserSetGuideLayout">
+
+            <TextView
+                style="@style/MainUserSetGuideName"
+                android:text="5分钟" />
+
+            <TextView
+                style="@style/MainUserSetGuideValue" />
+
+            <View
+                android:id="@+id/v_select_5"
+                style="@style/MainUserSetGuideArrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/ic_selected"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_never"
+            style="@style/MainUserSetGuideLayout">
+
+            <TextView
+                style="@style/MainUserSetGuideName"
+                android:text="不提醒" />
+
+            <TextView
+                style="@style/MainUserSetGuideValue" />
+
+            <View
+                android:id="@+id/v_select_never"
+                style="@style/MainUserSetGuideArrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/ic_selected"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

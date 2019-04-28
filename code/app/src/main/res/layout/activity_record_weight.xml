@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout
+        style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/cancel" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/title_record_weight" />
+
+        <LinearLayout style="@style/TitleRightBtnLy">
+
+            <TextView
+                android:id="@+id/tv_weight_record_save"
+                style="@style/Title_RightButton"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- 日期 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/GuideLineAddRecordTipTv"
+            android:text="@string/tip_date" />
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_date_value"
+            style="@style/GuideLineAddRecordValueLl">
+
+            <TextView
+                android:id="@+id/tv_date_value"
+                style="@style/GuideLineAddRecordValueTv"
+                android:text="11月10日 周五" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 体重 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/GuideLineAddRecordTipTv"
+            android:text="@string/sign_body_weight" />
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_weight_value"
+            style="@style/GuideLineAddRecordValueLl">
+
+            <TextView
+                android:id="@+id/tv_weight_value"
+                style="@style/GuideLineAddRecordValueTv"
+                android:text="64" />
+
+            <TextView
+                style="@style/GuideLineAddRecordUnitTv"
+                android:text="@string/unit_weight_en" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 体脂 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/GuideLineAddRecordTipTv"
+            android:text="@string/sign_body_fat_ratio" />
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_fat_rate_value"
+            style="@style/GuideLineAddRecordValueLl">
+
+            <TextView
+                android:id="@+id/tv_fat_rate_value"
+                style="@style/GuideLineAddRecordValueTv"
+                android:text="6" />
+
+            <TextView
+                style="@style/GuideLineAddRecordUnitTv"
+                android:text="@string/unit_percent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

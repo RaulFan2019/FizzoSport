@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/free_effort_info" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_effort_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fefeff"
+                android:textSize="18.2dp" />
+
+            <TextView
+                android:id="@+id/tv_effort_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天 09:30"
+                android:textColor="#fefeff"
+                android:textSize="9.8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/TitleRightBtnLy">
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                style="@style/Title_RightButton"
+                android:src="@drawable/ic_share_white" />
+
+            <ImageButton
+                android:id="@+id/btn_syn"
+                style="@style/Title_RightButton"
+                android:src="@drawable/ic_data_syn" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- info -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- 统计信息 -->
+                <include layout="@layout/include_workout_info_common_summary"/>
+
+                <!-- 心率  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <View
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_hr_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="心率"
+                        android:textSize="12.7dp"
+                        android:textColor="@color/tv_mostly" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="平均心率:"
+                        android:textColor="@color/tv_mostly"
+                        android:textSize="11.7dp" />
+
+                    <TextView
+                        android:id="@+id/tv_avg_hr_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:text="126"
+                        android:textColor="@color/tv_mostly"
+                        android:textSize="11.7dp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/DividerH"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="1dp"/>
+
+                <!-- 图示 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/tv_secondly"
+                        android:textSize="9.8dp"
+                        android:text="心率(次/分钟)"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/tv_secondly"
+                        android:textSize="9.8dp"
+                        android:text="强度"/>
+                </LinearLayout>
+
+                <!-- 图表 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <include layout="@layout/include_workout_point_chart_scale"/>
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentBottom="true">
+                        <View
+                            style="@style/DividerH"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开始"
+                                android:textColor="@color/tv_secondly"
+                                android:textSize="11.7dp" />
+
+                            <TextView
+                                android:id="@+id/tv_chart_end_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:textColor="@color/tv_secondly"
+                                android:textSize="11.7dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- 心率区域内时间 -->
+                <!--<include layout="@layout/include_workout_info_zone_view"/>-->
+                <include layout="@layout/include_workout_pie_chart"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <cn.hwh.sports.ui.common.MyLoadingView
+            android:id="@+id/v_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Button -->
+    <style name="BtnBig">
+        <item name="android:layout_width">288dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18.6dp</item>
+    </style>
+
+    <style name="BtnBigAccent" parent="@style/BtnBig">
+        <item name="android:background">@drawable/selector_big_accent</item>
+    </style>
+
+
+    <!-- Input Layout -->
+    <style name="InputLayoutBase">
+        <item name="android:layout_height">62dp</item>
+        <item name="android:background">@drawable/bg_widget_input_normal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="InputLayoutNameTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/tv_secondly</item>
+        <item name="android:textSize">15.7dp</item>
+    </style>
+    <style name="InputLayoutEdit">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">15.7dp</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textCursorDrawable">@drawable/et_cursor</item>
+    </style>
+</resources>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <!-- 更新进度条 -->
+    <FrameLayout
+        android:id="@+id/fl_sync_pro"
+        android:layout_width="match_parent"
+        android:layout_height="3dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="@color/primary" />
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="2.8dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/progress_sync_blue" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_main_error_tip"
+        android:layout_marginTop="5dp"
+        android:textSize="11.7dp"
+        android:textColor="@color/accent"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="173dp">
+
+        <Button
+            android:id="@+id/btn_bind_watch"
+            style="@style/Btn_Commit_transparent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textColor="@android:color/white"
+            android:text="@string/bind_watch" />
+
+        <LinearLayout
+            android:id="@+id/ll_watch_connecting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="78dp"
+                android:background="@drawable/ic_main_disconnect_device" />
+
+            <View
+                android:layout_width="112dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_main_disconnect_device_tip"/>
+        </LinearLayout>
+
+        <!-- 同步布局 -->
+        <LinearLayout
+            android:id="@+id/ll_sync"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/v_sync_anim"
+                    android:layout_width="92dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_watch_sync"
+                    android:layout_gravity="center"/>
+                <View
+                    android:layout_width="52dp"
+                    android:layout_height="62dp"
+                    android:background="@drawable/ic_main_sync_watch"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="数据同步中..."
+                android:textColor="@android:color/white"
+                android:textSize="11.7dp" />
+
+            <TextView
+                android:id="@+id/tv_sync_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="11.7dp" />
+        </LinearLayout>
+
+        <!-- 低电量布局 -->
+        <LinearLayout
+            android:id="@+id/ll_low_battery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="46dp"
+                android:layout_height="83dp"
+                android:background="@drawable/ic_watch_low_battery_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="手环电量不足请充电"
+                android:textColor="@android:color/white"
+                android:textSize="11.7dp" />
+        </LinearLayout>
+        <!-- 实时心率布局 -->
+        <RelativeLayout
+            android:id="@+id/ll_curr_hr"
+            android:layout_width="192dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/bg_main_curr_hr"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_curr_hr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:text="- -"
+                android:textColor="@color/accent"
+                android:textSize="@dimen/tv_import" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="115dp"
+                android:text="每分钟心跳数(bpm)"
+                android:textColor="@color/accent"
+                android:textSize="11.7dp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/MainWatchDataLl">
+
+            <TextView
+                android:id="@+id/tv_hr_target_high"
+                style="@style/MainWatchDataValue" />
+
+            <TextView
+                style="@style/MainWatchDataKey"
+                android:text="@string/hr_target_high" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainWatchDataLl">
+
+            <TextView
+                android:id="@+id/tv_hr_target_low"
+                style="@style/MainWatchDataValue" />
+
+            <TextView
+                style="@style/MainWatchDataKey"
+                android:text="@string/hr_target_low" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MainWatchDataLl">
+
+            <TextView
+                android:id="@+id/tv_hr_warning"
+                style="@style/MainWatchDataValue" />
+
+            <TextView
+                style="@style/MainWatchDataKey"
+                android:text="@string/hr_warning" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

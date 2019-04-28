@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"/>
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/title_user_info_set" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 头像 -->
+            <LinearLayout
+                android:id="@+id/ll_set_photo"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="92dp"
+                        android:layout_height="96dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_user_avatar_set" />
+
+                    <cn.hwh.sports.ui.common.CircularImage
+                        android:id="@+id/civ_user_avatar_set"
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    style="@style/MainUserSetGuideValue"
+                    android:text="@string/action_set_user_photo" />
+
+                <View style="@style/MainUserSetGuideArrow" />
+            </LinearLayout>
+
+            <!--  个人信息-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <!-- 昵称 -->
+                <LinearLayout
+                    android:id="@+id/rl_user_nickname_set"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/sign_nickname_set" />
+
+                    <TextView
+                        android:id="@+id/tv_user_nickname"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+
+                </LinearLayout>
+
+                <View style="@style/MainUserSetGuideDivider" />
+
+                <!-- 性别 -->
+                <LinearLayout
+                    android:id="@+id/rl_user_gender_set"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/sign_gender_set" />
+
+                    <TextView
+                        android:id="@+id/tv_user_gender"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+
+                <View style="@style/MainUserSetGuideDivider" />
+
+                <!-- 身高 -->
+                <LinearLayout
+                    android:id="@+id/rl_user_height_set"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/sign_height_set" />
+
+                    <TextView
+                        android:id="@+id/tv_user_height"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+
+                <View style="@style/MainUserSetGuideDivider" />
+
+                <!-- 体重 -->
+                <LinearLayout
+                    android:id="@+id/rl_user_weight_set"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/sign_weight_set" />
+
+                    <TextView
+                        android:id="@+id/tv_user_weight"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+
+                <View style="@style/MainUserSetGuideDivider" />
+
+                <!-- 生日 -->
+                <LinearLayout
+                    android:id="@+id/rl_user_birthday_set"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/sign_birthday_set" />
+
+                    <TextView
+                        android:id="@+id/tv_user_birthday"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/name_hr_target"
+                android:textColor="@color/tv_secondly"
+                android:textSize="11.7dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+                <!-- 静息心率 -->
+                <LinearLayout
+                    android:id="@+id/rl_user_rest_hr_set"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/sign_rest_hr_set" />
+
+                    <TextView
+                        android:id="@+id/tv_user_rest_hr"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+
+                <View style="@style/MainUserSetGuideDivider" />
+
+                <!-- 最大心率 -->
+                <LinearLayout
+                    android:id="@+id/rl_user_max_hr_set"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/sign_max_hr_set" />
+
+                    <TextView
+                        android:id="@+id/tv_user_max_hr"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+
+
+                <View style="@style/MainUserSetGuideDivider" />
+
+                <!-- 最高心率报警 -->
+                <LinearLayout
+                    android:id="@+id/rl_max_hr"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/name_hr_warning" />
+
+                    <TextView
+                        android:id="@+id/tv_waning_hr"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+
+                <View style="@style/MainUserSetGuideDivider" />
+
+                <!-- 靶心率上限 -->
+                <LinearLayout
+                    android:id="@+id/rl_bar_high"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/device_setting_bar_hr_high_title" />
+
+                    <TextView
+                        android:id="@+id/tv_bar_high"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+
+                <View style="@style/MainUserSetGuideDivider" />
+
+                <!-- 靶心率下限 -->
+                <LinearLayout
+                    android:id="@+id/rl_bar_low"
+                    style="@style/MainUserSetGuideLayout">
+
+                    <TextView
+                        style="@style/MainUserSetGuideName"
+                        android:text="@string/device_setting_bar_hr_low_title" />
+
+                    <TextView
+                        android:id="@+id/tv_bar_low"
+                        style="@style/MainUserSetGuideValue" />
+
+                    <View style="@style/MainUserSetGuideArrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView style="@style/GuideLineTitleTv" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/BtnBigAccent"
+                android:layout_marginBottom="76dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/logout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

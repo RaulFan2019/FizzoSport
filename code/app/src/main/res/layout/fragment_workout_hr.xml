@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <include layout="@layout/include_workout_fragment_pie_chart"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+        <LinearLayout
+            style="@style/WorkoutDataLl">
+            <TextView
+                android:id="@+id/tv_consume"
+                style="@style/WorkoutValueTv"/>
+            <TextView
+                style="@style/WorkoutKeyTv"
+                android:text="@string/name_consume_with_unit"/>
+        </LinearLayout>
+        <View
+            style="@style/DividerV"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="#e5e5e5"/>
+
+        <LinearLayout
+            style="@style/WorkoutDataLl">
+            <TextView
+                android:id="@+id/tv_effective_time"
+                style="@style/WorkoutValueTv"/>
+            <TextView
+                style="@style/WorkoutKeyTv"
+                android:text="@string/name_effective_sport_time"/>
+        </LinearLayout>
+        <View
+            style="@style/DividerV"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="#e5e5e5"/>
+
+        <LinearLayout
+            style="@style/WorkoutDataLl">
+            <TextView
+                android:id="@+id/tv_avg_power"
+                style="@style/WorkoutValueTv"/>
+            <TextView
+                style="@style/WorkoutKeyTv"
+                android:text="@string/name_avg_power"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

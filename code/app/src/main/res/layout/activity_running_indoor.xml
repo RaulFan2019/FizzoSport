@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- 心率所在的运动强度 -->
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="11.7dp"
+            android:layout_weight="1"
+            android:text="@string/effort_low"/>
+        <TextView
+            android:id="@+id/tv_hr_target_normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="11.7dp"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="11.7dp"
+            android:layout_weight="1"
+            android:text="@string/effort_high"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="288dp"
+        android:layout_marginTop="6.7dp"
+        android:layout_height="5.7dp"
+        android:background="@drawable/bg_effort_power" />
+
+    <LinearLayout
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/v_hr_pos"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/ic_hr_position"/>
+    </LinearLayout>
+
+
+    <!-- 实时心率 -->
+    <TextView
+        android:id="@+id/tv_curr_hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="- -"
+        android:textColor="@color/hr_target_low"
+        android:textSize="98dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/free_effort_key_curr_hr"
+        android:textColor="@android:color/white"
+        android:textSize="14.7dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/SportingDataLl">
+
+            <TextView
+                android:id="@+id/tv_curr_cadence"
+                style="@style/SportingDataValue"
+                android:text="- -" />
+
+            <TextView
+                style="@style/SportingDataKey"
+                android:layout_marginTop="5dp"
+                android:text="@string/free_effort_key_cadence" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/SportingDataLl">
+
+            <TextView
+                android:id="@+id/tv_step_count"
+                style="@style/SportingDataValue"
+                android:text="- -" />
+
+            <TextView
+                style="@style/SportingDataKey"
+                android:layout_marginTop="5dp"
+                android:text="@string/free_effort_key_step_count" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/SportingDataLl">
+
+            <TextView
+                android:id="@+id/tv_curr_duration"
+                style="@style/SportingDataValue"
+                android:text="- -" />
+
+            <TextView
+                style="@style/SportingDataKey"
+                android:layout_marginTop="5dp"
+                android:text="@string/free_effort_key_duration" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_effort_chart"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <!-- 状态和控制 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <View
+                    android:id="@+id/v_ble_status"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/ic_ble_connected" />
+
+                <TextView
+                    android:id="@+id/tv_ble_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ble_connected"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="11.7dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/v_play_voice"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="57dp"
+                    android:background="@drawable/ic_play_voice_open" />
+
+                <TextView
+                    android:id="@+id/tv_play_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/play_open"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="11.7dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_fizzo"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/DividerH"/>
+
+        <!-- 进度条 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="2.8dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/progress_bg_grey"/>
+
+                <ImageView
+                    android:id="@+id/iv_progress"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="2.8dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/progress_accent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_effort_pos_accent"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="5"/>
+
+                    <View
+                        android:id="@+id/v_warm_end"
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_effort_pos_normal"/>
+
+                    <View
+                        android:id="@+id/v_v_effort_length"
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:id="@+id/v_effort_end"
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_effort_pos_normal"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="5"/>
+
+                    <View
+                        android:id="@+id/v_effort_finish"
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_effort_pos_normal"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.7dp"
+                    android:text="@string/effort_warm_up"
+                    android:textColor="@color/accent"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="5"/>
+
+                <TextView
+                    android:id="@+id/tv_warm_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.7dp"
+                    android:textColor="@color/tv_mostly"/>
+
+                <View
+                    android:id="@+id/v_tv_effort_length"
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_effort_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.7dp"
+                    android:text="@string/effort_cold_down"
+                    android:textColor="@color/tv_mostly"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="5"/>
+
+                <TextView
+                    android:id="@+id/tv_effort_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.7dp"
+                    android:text="@string/finish"
+                    android:textColor="@color/tv_mostly"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/DividerH"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="11.7dp"
+                    android:text="本阶段"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="39dp"
+                    android:text="00:00:00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="11.7dp"
+                    android:text="后结束"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_finish"
+            style="@style/Btn_Commit_transparent"
+            android:layout_marginBottom="15dp"
+            android:text="@string/finish_effort" />
+    </LinearLayout>
+
+</LinearLayout>

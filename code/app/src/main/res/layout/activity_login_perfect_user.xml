@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/title_perfect_user" />
+    </RelativeLayout>
+
+    <!-- 头像 -->
+    <cn.hwh.sports.ui.common.CircularImage
+        android:id="@+id/civ_avatar"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="9.8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/action_change_photo"/>
+
+    <!-- 资料填写 -->
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_shape_fillet_white"
+        android:orientation="vertical">
+        <!-- 昵称 -->
+        <LinearLayout
+            android:id="@+id/ll_nickname"
+            style="@style/InputLayoutBase"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/InputLayoutNameTv"
+                android:text="@string/name_nickname"/>
+
+            <TextView
+                android:id="@+id/et_nickname"
+                style="@style/InputLayoutEdit"/>
+        </LinearLayout>
+        <!-- 性别 -->
+        <LinearLayout
+            android:id="@+id/ll_gender"
+            style="@style/InputLayoutBase"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/InputLayoutNameTv"
+                android:text="@string/name_gender"/>
+
+            <TextView
+                android:id="@+id/et_gender"
+                style="@style/InputLayoutEdit"
+                android:enabled="false"/>
+        </LinearLayout>
+        <!-- 体重 -->
+        <LinearLayout
+            android:id="@+id/ll_weight"
+            style="@style/InputLayoutBase"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/InputLayoutNameTv"
+                android:text="@string/name_weight"/>
+
+            <TextView
+                android:id="@+id/et_weight"
+                style="@style/InputLayoutEdit"
+                android:enabled="false"/>
+        </LinearLayout>
+        <!-- 身高 -->
+        <LinearLayout
+            android:id="@+id/ll_height"
+            style="@style/InputLayoutBase"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/InputLayoutNameTv"
+                android:text="@string/name_height"/>
+
+            <TextView
+                android:id="@+id/et_height"
+                style="@style/InputLayoutEdit"
+                android:enabled="false"/>
+        </LinearLayout>
+        <!-- 生日 -->
+        <LinearLayout
+            android:id="@+id/ll_birthday"
+            style="@style/InputLayoutBase"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/InputLayoutNameTv"
+                android:text="@string/name_birthday"/>
+
+            <TextView
+                android:id="@+id/et_birthday"
+                style="@style/InputLayoutEdit"
+                android:enabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/BtnBigAccent"
+        android:text="@string/action_complete"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

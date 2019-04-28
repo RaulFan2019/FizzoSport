@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout
+        style="@style/Title_Layout"
+        android:background="#00bcf2">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/free_effort_info" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_effort_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="户外跑步"
+                android:textColor="#fefeff"
+                android:textSize="18.2dp" />
+
+            <TextView
+                android:id="@+id/tv_effort_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天 09:30"
+                android:textColor="#fefeff"
+                android:textSize="9.8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/TitleRightBtnLy">
+
+            <ImageButton
+                android:id="@+id/btn_share"
+                style="@style/Title_RightButton"
+                android:src="@drawable/ic_share_white" />
+
+            <ImageButton
+                android:id="@+id/btn_syn"
+                style="@style/Title_RightButton"
+                android:src="@drawable/ic_data_syn" />7
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- info -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- 统计信息 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:background="#007ca0"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <!-- 时间，消耗，平均心率 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_duration"
+                            style="@style/FreeEffortSummaryTvValue"
+                            android:text="28:55" />
+
+                        <TextView
+                            style="@style/FreeEffortSummaryTvUnit"
+                            android:text="@string/unit_minute" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tv_calorie"
+                            style="@style/FreeEffortSummaryTvValue"
+                            android:text="105" />
+
+                        <TextView
+                            style="@style/FreeEffortSummaryTvUnit"
+                            android:text="@string/unit_calorie" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tv_avg_hr"
+                            style="@style/FreeEffortSummaryTvValue"
+                            android:text="122" />
+
+                        <TextView
+                            style="@style/FreeEffortSummaryTvUnit"
+                            android:text="@string/avg_hr" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                    <!-- 锻炼点数 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_effort_point"
+                            style="@style/FreeEffortSummaryTvValue"
+                            android:text="124" />
+
+                        <TextView
+                            style="@style/FreeEffortSummaryTvUnit"
+                            android:text="@string/effort_point" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 心率区域内时间 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <View
+                        android:layout_width="11.5dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/ic_hr_zone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/effort_hr_zone_tip" />
+                </LinearLayout>
+
+                <View
+                    style="@style/DividerH"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="4dp" />
+
+                <cn.hwh.sports.ui.common.WorkoutInfoHrZoneView
+                    android:id="@+id/v_zone_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp" />
+
+                <cn.hwh.sports.ui.common.WorkoutInfoHrZoneView
+                    android:id="@+id/v_zone_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp" />
+
+                <cn.hwh.sports.ui.common.WorkoutInfoHrZoneView
+                    android:id="@+id/v_zone_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp" />
+
+                <cn.hwh.sports.ui.common.WorkoutInfoHrZoneView
+                    android:id="@+id/v_zone_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp" />
+
+                <cn.hwh.sports.ui.common.WorkoutInfoHrZoneView
+                    android:id="@+id/v_zone_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp" />
+
+                <cn.hwh.sports.ui.common.WorkoutInfoHrZoneView
+                    android:id="@+id/v_zone_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="15dp" />
+
+                <!-- 心率  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <View
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_hr_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hr"
+                        android:textColor="#050505" />
+                </LinearLayout>
+
+                <View
+                    style="@style/DividerH"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="平均每分钟心跳数(bpm)"
+                        android:textColor="#050505"
+                        android:textSize="14.7dp" />
+
+                    <TextView
+                        android:id="@+id/tv_avg_hr_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="126"
+                        android:textColor="#050505"
+                        android:textSize="29dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp"
+                    android:layout_marginBottom="38dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="38.8dp">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingLeft="28dp"
+                        android:paddingRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开始"
+                            android:textColor="#adadad"
+                            android:textSize="11.7dp" />
+
+                        <TextView
+                            android:id="@+id/tv_chart_end_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#adadad"
+                            android:textSize="11.7dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <cn.hwh.sports.ui.common.MyLoadingView
+            android:id="@+id/v_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

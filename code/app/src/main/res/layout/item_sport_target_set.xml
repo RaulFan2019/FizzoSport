@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@color/bg_base"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item_sport"
+        style="@style/GuideLineSetItem"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <!-- 目标指示图 -->
+        <View
+            android:id="@+id/v_week_target"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="19dp"
+            android:background="@drawable/ic_week_target_1"/>
+        <!-- 目标文字 天数 -->
+        <TextView
+            android:id="@+id/tv_sport_days"
+            style="@style/GuideLineSetItemTv"
+            android:layout_marginStart="50dp"
+            android:text="1天"
+            android:textSize="15.7dp"/>
+
+        <!-- 是否已选择 -->
+        <View
+            android:id="@+id/v_target_selected"
+            style="@style/GuideLineArrowRightImg"
+            android:layout_width="18dp"
+            android:layout_height="13dp"
+            android:background="@drawable/ic_selected"/>
+    </RelativeLayout>
+
+    <View style="@style/DividerH" android:layout_marginStart="15dp"/>
+</LinearLayout>

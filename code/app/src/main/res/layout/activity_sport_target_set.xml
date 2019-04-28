@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/tab_user" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="每日锻炼" />
+
+        <!--<LinearLayout-->
+        <!--style="@style/TitleRightBtnLy">-->
+        <!--<ImageButton-->
+        <!--style="@style/Title_RightButton"-->
+        <!--android:src="@drawable/ic_more"/>-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+    <View style="@style/DividerH" />
+
+    <TextView
+        style="@style/GuideLineTitleTv"
+        android:text="每日锻炼" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sport_target_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

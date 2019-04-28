@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_workout_list_effort"
+    android:layout_width="match_parent"
+    android:layout_height="146dp"
+    android:minHeight="146dp"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v_sport_type"
+            android:layout_width="31dp"
+            android:layout_height="31dp" />
+
+        <!-- info  -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_effort_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sport_in_room"
+                android:textColor="@color/tv_mostly"
+                android:textSize="15.7dp" />
+            <!-- 锻炼时间 -->
+            <TextView
+                android:id="@+id/tv_time_effort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星期二 at 09:03"
+                android:textColor="@color/tv_mostly"
+                android:textSize="11.7dp" />
+            <!-- 锻炼时长，锻炼卡路里 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="14.4dp"
+                        android:layout_height="14.4dp"
+                        android:background="@drawable/ic_duration_small" />
+
+                    <TextView
+                        android:id="@+id/tv_effort_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="26"
+                        android:textColor="@color/tv_mostly"
+                        android:textSize="15.7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit_minute"
+                        android:textColor="@color/tv_secondly"
+                        android:textSize="11.7dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="10.4dp"
+                        android:layout_height="14.3dp"
+                        android:background="@drawable/ic_calorie_small" />
+
+                    <TextView
+                        android:id="@+id/tv_effort_calorie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="126"
+                        android:textColor="@color/tv_mostly"
+                        android:textSize="15.7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unit_calorie"
+                        android:textColor="@color/tv_secondly"
+                        android:textSize="11.7dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="14.4dp"
+                    android:layout_height="14.4dp"
+                    android:background="@drawable/ic_hr_small" />
+
+                <TextView
+                    android:id="@+id/tv_avg_hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="126"
+                    android:textColor="@color/tv_mostly"
+                    android:textSize="15.7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_hr"
+                    android:textColor="@color/tv_secondly"
+                    android:textSize="11.7dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="264dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/hr_zone_6"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/v_zone_5"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/hr_zone_1" />
+                    <View
+                        android:id="@+id/v_zone_4"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/hr_zone_2" />
+                    <View
+                        android:id="@+id/v_zone_3"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/hr_zone_3" />
+                    <View
+                        android:id="@+id/v_zone_2"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/hr_zone_4" />
+                    <View
+                        android:id="@+id/v_zone_1"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/hr_zone_5" />
+                    <View
+                        android:id="@+id/v_zone_0"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/hr_zone_6" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_avg_effort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="15.7dp"
+                    android:textColor="@android:color/white"
+                    android:text="54%"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/GuideLineArrowRightImg"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="0dp" />
+    </LinearLayout>
+
+    <View style="@style/DividerH" />
+</LinearLayout>

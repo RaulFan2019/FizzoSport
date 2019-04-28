@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="264dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shape_fillet_white"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:maxLines="1"
+        android:textColor="@color/tv_mostly"
+        android:textSize="15.7dp"
+        android:text="@string/title_down_apk"/>
+
+    <View
+        style="@style/DividerH"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/tv_download_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/tv_secondly"
+        android:textSize="11.5dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/progress_download_bg" />
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/progress_download" />
+    </FrameLayout>
+</LinearLayout>

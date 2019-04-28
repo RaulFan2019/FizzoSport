@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="startLoad">#35a8c9</color>
+    <!-- 文字 -->
+    <color name="tv_main">#2e2e2e</color>
+
+    <color name="tv_normal">#404143</color>
+    <color name="tv_tip">#a3a3a3</color>
+    <color name="tv_important">#00bfa5</color>
+
+    <color name="tv_get_v_code">#00bfa5</color>
+
+    <color name="tv_logout">#37C5DC</color>
+
+    <color name="tv_tab_normal">#777777</color>
+    <color name="tv_tab_select">#ff4612</color>
+
+    <color name="tv_main_user">#000000</color>
+    <color name="tv_main_join_time">#AAAAAA</color>
+    <color name="tv_main_add_device">#37C5DC</color>
+    <color name="tv_main_user_set_title">#6D6D72</color>
+    <color name="tv_main_right_text">#8F8F8F</color>
+    
+    <color name="tv_record_unit">#ADADAD</color>
+
+
+    <!-- dialog -->
+    <color name="dialog_bg">#ffffff</color>
+
+    <!-- 通用色块 -->
+    <color name="bg_base">#ffffff</color>
+    <color name="bg_divider">#DADADA</color>
+    <color name="bg_base_gray">#F5F5F5</color>
+
+    <!-- 标题栏颜色 -->
+    <color name="bg_sleep_title">#1A0566</color>
+    <color name="bg_weight_title">#08627C</color>
+    <color name="bg_rest_hr_title">#08627C</color>
+    <color name="bg_student_report_title">#00BCF2</color>
+    <color name="bg_status_workout_list">#30aead</color>
+
+    <!-- 统计详情 -->
+    <color name="bg_item_total_title">@color/accent</color>
+    <color name="tv_item_total_title">@android:color/white</color>
+    <color name="tv_item_week_normal">@color/tv_mostly</color>
+    <color name="tv_item_value_normal">@color/tv_mostly</color>
+    <color name="tv_item_unit_normal">@color/tv_secondly</color>
+
+    <!-- zone 颜色 -->
+    <color name="hr_zone_1">#fe482f</color>
+    <color name="hr_zone_2">#ff7603</color>
+    <color name="hr_zone_3">#ffb300</color>
+    <color name="hr_zone_4">#98e961</color>
+    <color name="hr_zone_5">#00debf</color>
+    <color name="hr_zone_6">#cfcfcf</color>
+
+    <!-- 靶心率颜色 -->
+    <color name="hr_target_low">#ffffff</color>
+    <color name="hr_target_normal">#16db5c</color>
+    <color name="hr_target_high">#ff4612</color>
+</resources>

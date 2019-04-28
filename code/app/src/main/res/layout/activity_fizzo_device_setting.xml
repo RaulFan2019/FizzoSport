@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base_gray"
+    android:orientation="vertical">
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/tab_user" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/title_heartbeat_settings" />
+
+    </RelativeLayout>
+
+    <!-- 手表概况 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="54dp"
+            android:background="@drawable/ic_fizzo_device" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fizzo_device"
+                android:textColor="@color/tv_mostly"
+                android:textSize="@dimen/tv_form_title" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="8% 电量中等"
+                android:textColor="@color/tv_secondly"
+                android:textSize="@dimen/tv_tip_third" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <!-- 模式设置 -->
+        <LinearLayout
+            android:id="@+id/rl_mode"
+            style="@style/GuideLineSetItem"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="模式选择" />
+
+            <TextView
+                android:id="@+id/tv_mode"
+                style="@style/GuideLineRightText"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:textColor="@color/tv_mostly"
+                android:text="---"/>
+
+            <View style="@style/GuideLineArrowRightImg" />
+        </LinearLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+
+        <!-- MAC地址 -->
+        <RelativeLayout
+            style="@style/GuideLineSetItem">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="MAC地址" />
+
+            <TextView
+                android:id="@+id/tv_mac"
+                style="@style/GuideLineRightText"
+                android:textColor="@color/tv_mostly"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/DividerH"
+            android:layout_marginStart="15dp" />
+
+        <!-- 升级设备 -->
+        <LinearLayout
+            android:id="@+id/rl_update_device"
+            style="@style/GuideLineSetItemHeight"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/GuideLineSetItemTv"
+                android:text="@string/device_setting_update_device_title" />
+
+            <View
+                android:id="@+id/v_need_update"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_new_device_version"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_update_device"
+                style="@style/GuideLineRightText"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:text="---"
+                android:textColor="@color/tv_mostly" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_unbind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/device_unbind"
+            android:textColor="#343339"
+            android:textSize="@dimen/tv_button_mostly" />
+    </LinearLayout>
+</LinearLayout>

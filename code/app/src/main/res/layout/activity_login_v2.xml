@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="84dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/ic_logo_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/btn_wx_login"
+        style="@style/BtnBigAccent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="26dp"
+            android:layout_height="22dp"
+            android:background="@drawable/ic_wx_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/action_wx_login"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_jump_to_phone_login"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="11.7dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/action_jump_to_phone_login"/>
+
+</LinearLayout>

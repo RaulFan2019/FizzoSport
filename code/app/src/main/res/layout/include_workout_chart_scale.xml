@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/WorkoutChartScaleLayout">
+
+        <TextView
+            style="@style/WorkoutChartScaleLeftTv"
+            android:text="200" />
+
+        <View
+            style="@style/WorkoutChartScaleLine"/>
+        <TextView
+            style="@style/WorkoutChartScaleRightTv"
+            android:text="250"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        style="@style/WorkoutChartScaleLayout">
+
+        <TextView
+            style="@style/WorkoutChartScaleLeftTv"
+            android:text="160" />
+
+        <View
+            style="@style/WorkoutChartScaleLine"/>
+        <TextView
+            style="@style/WorkoutChartScaleRightTv"
+            android:text="200"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        style="@style/WorkoutChartScaleLayout">
+
+        <TextView
+            style="@style/WorkoutChartScaleLeftTv"
+            android:text="120" />
+
+        <View
+            style="@style/WorkoutChartScaleLine"/>
+        <TextView
+            style="@style/WorkoutChartScaleRightTv"
+            android:text="150"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        style="@style/WorkoutChartScaleLayout">
+
+        <TextView
+            style="@style/WorkoutChartScaleLeftTv"
+            android:text="80" />
+
+        <View
+            style="@style/WorkoutChartScaleLine"/>
+        <TextView
+            style="@style/WorkoutChartScaleRightTv"
+            android:text="100"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        style="@style/WorkoutChartScaleLayout">
+
+        <TextView
+            style="@style/WorkoutChartScaleLeftTv"
+            android:text="40" />
+
+        <View
+            style="@style/WorkoutChartScaleLine"/>
+        <TextView
+            style="@style/WorkoutChartScaleRightTv"
+            android:text="50"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

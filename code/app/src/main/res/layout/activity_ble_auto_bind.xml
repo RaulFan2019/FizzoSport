@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_step_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="正确佩戴您的手环"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/tv_tip_import_active" />
+
+    <TextView
+        android:id="@+id/tv_step_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:text="FIZZO佩戴位置腕骨向上两指宽"
+        android:textColor="@color/tv_secondly"
+        android:textSize="@dimen/tv_tip_normal" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/v_adorn"
+            android:layout_marginTop="42dp"
+            android:layout_width="189dp"
+            android:layout_height="214dp"
+            android:background="@drawable/bg_device_adorn"/>
+
+        <View
+            android:id="@+id/v_open_device"
+            android:layout_marginTop="107dp"
+            android:layout_width="230dp"
+            android:layout_height="93dp"
+            android:background="@drawable/bg_device_open_device"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/fl_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:visibility="gone">
+            <View
+                android:id="@+id/v_scanning"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:background="@drawable/bg_device_scan_or_connecting" />
+            <View
+                android:layout_width="170dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_device_scan_device"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_shock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/v_shock"
+                android:layout_width="58dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_device_shock_anim"/>
+
+            <View
+                android:layout_width="104dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_device_shock"/>
+        </FrameLayout>
+        
+        <View
+            android:id="@+id/v_scan_none"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="69dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_device_scan_none"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- 操作按钮布局 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+        <Button
+            android:id="@+id/btn_active"
+            style="@style/Btn_Commit"
+            android:text="佩戴完成"/>
+        <Button
+            android:id="@+id/btn_ask"
+            style="@style/Btn_Commit_transparent"
+            android:layout_marginTop="15dp"
+            android:text="暂不绑定"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

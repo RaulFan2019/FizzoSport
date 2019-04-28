@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <cn.hwh.sports.ui.wheelindicator.WheelIndicatorView
+                android:id="@+id/wheel_view_length"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:backgroundColor="@android:color/white"
+                app:filledPercent="0"
+                app:innerBackgroundCircleLineWidth="0.8dp"
+                app:itemsLineWidth="2.5dp"
+                app:src="@drawable/ic_length_blue" />
+
+            <TextView
+                android:id="@+id/tv_length"
+                style="@style/MainHealthStatisticsTv"
+                android:text="0" />
+
+            <TextView
+                style="@style/MainHealthStatisticsTv"
+                android:text="@string/unit_length" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <cn.hwh.sports.ui.wheelindicator.WheelIndicatorView
+                android:id="@+id/wheel_view_cal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:backgroundColor="@android:color/white"
+                app:filledPercent="0"
+                app:innerBackgroundCircleLineWidth="0.8dp"
+                app:itemsLineWidth="2.5dp"
+                app:src="@drawable/ic_calorie_blue" />
+
+            <TextView
+                android:id="@+id/tv_calorie"
+                style="@style/MainHealthStatisticsTv"
+                android:text="0" />
+
+            <TextView
+                style="@style/MainHealthStatisticsTv"
+                android:text="@string/unit_calorie" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <cn.hwh.sports.ui.wheelindicator.WheelIndicatorView
+                android:id="@+id/wheel_view_step"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:backgroundColor="@android:color/white"
+                app:filledPercent="0"
+                app:innerBackgroundCircleLineWidth="0.8dp"
+                app:itemsLineWidth="2.5dp"
+                app:src="@drawable/ic_step_blue" />
+
+            <TextView
+                android:id="@+id/tv_step"
+                style="@style/MainHealthStatisticsTv"
+                android:text="0" />
+
+            <TextView
+                style="@style/MainHealthStatisticsTv"
+                android:text="@string/unit_step" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <cn.hwh.sports.ui.wheelindicator.WheelIndicatorView
+                android:id="@+id/wheel_view_sport_time"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:backgroundColor="@android:color/white"
+                app:filledPercent="0"
+                app:innerBackgroundCircleLineWidth="0.8dp"
+                app:itemsLineWidth="2.5dp"
+                app:src="@drawable/ic_sport_time_blue" />
+
+            <TextView
+                android:id="@+id/tv_sport_time"
+                style="@style/MainHealthStatisticsTv"
+                android:text="0" />
+
+            <TextView
+                style="@style/MainHealthStatisticsTv"
+                android:text="@string/unit_minute" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

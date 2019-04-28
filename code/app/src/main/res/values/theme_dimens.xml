@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 一般说明文字 -->
+    <dimen name="tv_tip_normal">11.7dp</dimen>
+    <!-- 重要操作说明文字 -->
+    <dimen name="tv_tip_import_active">29.4dp</dimen>
+    <!-- 辅助说明文字 -->
+    <dimen name="tv_tip_secondary">14.7dp</dimen>
+    <!-- 第三级说明文字 -->
+    <dimen name="tv_tip_third">9.8dp</dimen>
+
+
+    <!-- 列表标题（主要文字） -->
+    <dimen name="tv_item_list_title">16.7dp</dimen>
+    <!-- 列表一般文字 -->
+    <dimen name="tv_item_list_normal">15.7dp</dimen>
+
+    <!-- 对话框标题（主要文字） -->
+    <dimen name="tv_dialog_title">15.7dp</dimen>
+
+    <!-- 一般输入框文字 -->
+    <dimen name="et_input">15.7dp</dimen>
+
+    <!-- 表单标题 -->
+    <dimen name="tv_form_title">15.7dp</dimen>
+    <!-- 表单内容 -->
+    <dimen name="tv_form_value">15.7dp</dimen>
+    <!-- 表单副标题 -->
+    <dimen name="tv_form_title_secondary">14.7dp</dimen>
+
+
+    <!-- 瓷片标题 -->
+    <dimen name="tv_chip_title">15.7dp</dimen>
+
+    <dimen name="tv_link_small">11.7dp</dimen>
+    <dimen name="tv_link_normal">14.7dp</dimen>
+
+    <!-- 重要数字 -->
+    <dimen name="tv_import">98dp</dimen>
+    <!-- 锁屏页面数字 -->
+    <dimen name="tv_number_lock">39dp</dimen>
+    <!-- 主页重要数字 -->
+    <dimen name="tv_number_main">39dp</dimen>
+
+    <!-- 标题文字 -->
+    <dimen name="tv_title">18.6dp</dimen>
+
+    <!-- 主要按钮文字 -->
+    <dimen name="tv_button_mostly">18.6dp</dimen>
+    <!-- 次级按钮文字 -->
+    <dimen name="tv_button_secondary">15.7dp</dimen>
+    <!-- 标题栏按钮 -->
+    <dimen name="tv_button_title">17.6dp</dimen>
+
+
+
+</resources>

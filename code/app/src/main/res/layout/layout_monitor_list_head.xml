@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <cn.hwh.sports.ui.common.MonitorChart
+        android:id="@+id/monitor_chart"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_details_list_tip"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center_vertical"
+        android:background="@color/bg_base"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/v_head_tip_img"
+            style="@style/ItemLineHeadTipImg"
+            android:background="@drawable/ic_step_blue" />
+
+        <TextView
+            android:id="@+id/tv_head_tip"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_mostly"
+            android:textSize="@dimen/tv_tip_secondary"/>
+    </LinearLayout>
+</LinearLayout>

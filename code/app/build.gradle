@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('D:/workspace/company porject/123Sports')
+            keyAlias '123sports'
+            keyPassword '123Sports'
+            storePassword '123Sports'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "cn.hwh.sports"
+        minSdkVersion 18
+        targetSdkVersion 22
+        versionCode 17
+        versionName "FIZZO Ver.2.2.5"
+        multiDexEnabled true
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi'
+            universalApk false
+        }
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true //Zipalign优化
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            zipAlignEnabled true //Zipalign优化
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['jniLibs']
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    jcenter()
+}
+
+
+dependencies {
+    //Android 基本支持库
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    //自定义meterial库
+    compile(name: 'material-1.2.1', ext: 'aar')
+    //65535大项目支持库
+    compile 'com.android.support:multidex:1.0.1'
+    //UI注解
+    compile 'com.jakewharton:butterknife:8.1.0'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+    //ssh 支持库
+    compile 'com.jcraft:jsch:0.1.51'
+    //xUtils 框架
+    compile 'org.xutils:xutils:3.4.0'
+    //自定义基础工具类
+    compile project(':baseUtilslib')
+    compile project(':marsdaemon')
+    compile project(':pickviewlibrary')
+    compile project(':view_image_selector')
+    compile project(':mpchartlib')
+    compile project(':umlib')
+    compile project(':dfulib')
+    compile project(':umengPushSDK')
+    compile project(':EventBus')
+
+}

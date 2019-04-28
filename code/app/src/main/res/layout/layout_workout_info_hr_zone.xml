@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="28dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"/>
+
+        <View
+            android:id="@+id/v_zone"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/hr_zone_1"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11.7dp"
+            android:textColor="#020202"
+            android:text="22分钟"/>
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="区间四"
+            android:textColor="#717171"
+            android:textSize="11.7dp"/>
+    </LinearLayout>
+
+</LinearLayout>

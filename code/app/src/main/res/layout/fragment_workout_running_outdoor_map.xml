@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_running"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="165dp">
+
+        <View
+            android:id="@+id/v_map_position"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:background="@drawable/ic_map_position"/>
+
+        <View
+            android:id="@+id/v_map_km"
+            android:layout_marginTop="15dp"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:background="@drawable/ic_map_km_on"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <include layout="@layout/include_running_outdoor_map_hr_zone" />
+
+        <LinearLayout
+            style="@style/WorkoutLineLl"
+            android:background="@android:color/white"
+            android:layout_marginTop="6.5dp"
+            android:layout_height="100dp">
+            <LinearLayout
+                style="@style/WorkoutDataLl">
+                <TextView
+                    android:id="@+id/tv_length"
+                    style="@style/WorkoutValueTv"/>
+                <TextView
+                    style="@style/WorkoutKeyTv"
+                    android:text="@string/unit_length"/>
+            </LinearLayout>
+            <View
+                style="@style/DividerV"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#e5e5e5"/>
+            <LinearLayout
+                style="@style/WorkoutDataLl">
+                <TextView
+                    android:id="@+id/tv_pace_avg"
+                    style="@style/WorkoutValueTv"/>
+                <TextView
+                    style="@style/WorkoutKeyTv"
+                    android:text="@string/name_pace_avg"/>
+            </LinearLayout>
+            <View
+                style="@style/DividerV"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#e5e5e5"/>
+            <LinearLayout
+                style="@style/WorkoutDataLl">
+                <TextView
+                    android:id="@+id/tv_duration"
+                    style="@style/WorkoutValueTv"/>
+                <TextView
+                    style="@style/WorkoutKeyTv"
+                    android:text="@string/name_duration_with_unit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

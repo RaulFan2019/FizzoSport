@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_base_gray">
+
+
+    <!-- title -->
+    <RelativeLayout style="@style/Title_Layout">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/Title_BackButton"
+            android:text="@string/system_settings" />
+
+        <TextView
+            style="@style/Title_TitleTv"
+            android:text="@string/system_settings_about_us" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/tv_mostly"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="@dimen/tv_tip_normal"
+        android:text="@string/about_us"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11.7dp"
+        android:textColor="@color/tv_secondly"
+        android:layout_marginBottom="15dp"/>
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_sporting_submit"
+            android:textColor="@android:color/white"
+            android:textSize="16.7dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!--  距离 -->
+        <LinearLayout
+            android:id="@+id/ll_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入本次的公里数"
+                android:textColor="@android:color/white"
+                android:textSize="11.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_shape_fillet_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="里程："
+                    android:textColor="@color/tv_secondly"
+                    android:textSize="15.7dp" />
+
+                <EditText
+                    android:id="@+id/et_length"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:digits="0123456789."
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:selectAllOnFocus="true"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="* 室内跑步状态下手环智能记录里程功能正在努力研发中，敬请期待。"
+                android:textColor="@color/tv_secondly"
+                android:textSize="9.8dp" />
+
+
+        </LinearLayout>
+
+        <!-- 感受 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="66dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="记录下您的感受"
+                android:textColor="@android:color/white"
+                android:textSize="11.7dp" />
+
+            <View
+                android:layout_width="66dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="@string/value_relaxed"
+                android:textColor="@android:color/white"
+                android:textSize="11.7dp" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/accent"
+                android:foregroundTint="@color/accent"
+                android:indeterminateTint="@color/accent"
+                android:max="5"
+                android:progressTint="@color/accent"
+                android:rating="3"
+                android:stepSize="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/value_tired"
+                android:textColor="@android:color/white"
+                android:textSize="11.7dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_save"
+        style="@style/BtnBigAccent"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/action_save"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

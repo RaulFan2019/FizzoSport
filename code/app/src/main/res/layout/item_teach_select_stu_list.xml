@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:minHeight="57dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical">
+        <cn.hwh.sports.ui.common.CircularImage
+            android:id="@+id/iv_avatar"
+            android:layout_width="47dp"
+            android:layout_height="47dp" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tv_mostly"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="@dimen/tv_item_list_normal"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/tv_mostly"
+            android:textSize="@dimen/tv_item_list_normal"/>
+    </LinearLayout>
+
+    <View style="@style/DividerH"
+        android:layout_marginLeft="79dp"/>
+
+</LinearLayout>

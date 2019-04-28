@@ -1,0 +1,329 @@
+<resources>
+    <string name="app_name">FIZZO</string>
+    <string name="app_lower_name">Fizzo</string>
+
+    <string name="coach">教练</string>
+    <string name="coach_page">教练面板</string>
+
+    <string name="hr_target_high">靶心率上限</string>
+    <string name="hr_target_low">靶心率下限</string>
+    <string name="hr_warning">报警心率</string>
+
+    <string name="bind_watch">绑定手环</string>
+
+    <!-- share  -->
+    <string name="share_wechat_c">微信</string>
+    <string name="share_wechat_moment">朋友圈</string>
+
+    <!-- load more -->
+    <string name="pull_to_load_more">上拉加载更多</string>
+    <string name="pull_loading">正在加载...</string>
+    <string name="pull_not_need_load_more">没有更多数据</string>
+
+    <string name="search">搜索</string>
+
+    <string name="play_voice">语音播报</string>
+    <string name="play_open">开</string>
+    <string name="play_close">关</string>
+    
+    <string name="ble_connected">设备已连接</string>
+    <string name="ble_disconnect">设备已断开</string>
+
+    <string name="back">返回</string>
+    <string name="complete">完成</string>
+    <string name="next">下一步</string>
+    <string name="jump">跳过</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="select">选择</string>
+    <string name="commit">提交</string>
+
+    <string name="finish">结束</string>
+    <string name="map">地图</string>
+    <string name="pause">暂停</string>
+    <string name="start">开始</string>
+    <string name="forward">继续</string>
+
+
+    <string name="state_data_already_syn">已同步</string>
+    <string name="state_data_un_syn">未同步</string>
+
+    <!-- 登录/注册 -->
+    <string name="hint_input_phone">请输入手机号</string>
+    <string name="hint_input_pwd">请输入密码</string>
+    <string name="hint_input_new_psw">请输入新密码</string>
+    <string name="hint_input_v_code">请输入验证码</string>
+    <string name="hint_register_tip">为了数据的准确性，请填写完整真实数据</string>
+    <string name="hint_input_store_id">请输入门店编号</string>
+
+    <string name="forget_pwd"><u>忘记密码？</u></string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="register_todo">新用户注册 >></string>
+    <string name="recover_psw">找回密码</string>
+    <string name="get_v_code">获取验证码</string>
+    <string name="register_user_info">完善资料</string>
+    <string name="title_select_photo">选择照片</string>
+    <string name="logout">退出登录</string>
+    <string name="register_select_store">选择门店</string>
+
+    <!-- 个人资料 -->
+    <string name="hint_nickname">昵称</string>
+    <string name="hint_gender">性别</string>
+    <string name="hint_location">地区</string>
+    <string name="hint_birthday">生日</string>
+    <string name="hint_height">身高</string>
+    <string name="hint_weight">体重</string>
+
+    <!-- MultiImageSelectorActivity -->
+    <string name="folder_all">所有图片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">启动摄像头失败</string>
+    <string name="msg_amount_limit">超出最大限制</string>
+    <string name="select_mode">选择模式</string>
+    <string name="mode_single">单选</string>
+    <string name="mode_multi">多选</string>
+    <string name="max_select_amount">最大选择数量</string>
+    <string name="hint_default_amount">默认数量为9</string>
+    <string name="enable_camera">是否启用照相机</string>
+    <string name="enable">是</string>
+    <string name="disable">否</string>
+    <string name="go_select">图片选择</string>
+    <string name="btn_finish">完成</string>
+    <string name="Tv.MultiImageSelectorActivity.title">选择照片</string>
+
+    <!-- 主页 -->
+    <string name="title_current_page_personal">个人</string>
+    <string name="tab_health">健康</string>
+    <string name="tab_sleep">睡眠</string>
+    <string name="tab_user">我的</string>
+    <string name="tab_sport">锻炼</string>
+    <string name="main_health_week_sport_tip_1">天中的第</string>
+    <string name="main_health_week_sport_tip_2">天</string>
+    <string name="main_health_week_sport_tip_3">每周锻炼</string>
+    <string name="main_health_rest_hr">静息心跳数</string>
+    <string name="main_health_sign">体征趋势</string>
+
+    <string name="main_record_run">户外跑步</string>
+    <string name="main_record_sport">室内健身</string>
+    <string name="main_record_run_indoor">室内跑步</string>
+    <string name="main_record_weight">记录体重</string>
+    <string name="main_record_sleep">记录睡眠</string>
+
+    <string name="workout_list">锻炼项目</string>
+    <string name="main_user_add_device">添加设备</string>
+    <string name="main_tip_user_target">锻炼目标</string>
+    <string name="main_tip_user_set">设置</string>
+    <string name="main_user_set_item_event">每日活动</string>
+    <string name="main_user_set_item_sport">锻炼播报</string>
+    <string name="main_user_set_item_body">身体指标</string>
+    <string name="main_user_set_item_sleep">睡眠</string>
+    <string name="main_user_set_item_sport_record">每日锻炼</string>
+
+    <!-- 信息详情 -->
+    <string name="title_user_rest_hr">心率</string>
+    <string name="title_user_sleep">睡眠记录</string>
+    <string name="title_user_health_sign">体征趋势</string>
+    <string name="title_user_weight">体重趋势</string>
+    
+    <!-- 个人目标设置 --><!-- 睡眠 -->
+    <string name="title_sleep_target">睡眠目标</string>
+    <string name="tip_sleep_target">每日目标</string>
+    <string name="sign_sleep_target_set">睡眠时长</string>
+    <!-- 身体 -->
+    <string name="title_body_target">身体目标</string>
+    <string name="sign_body_weight">体重</string>
+    <string name="sign_body_fat_ratio">体脂率</string>
+    <!--活动-->
+    <string name="title_event_target">每日目标</string>
+    <string name="tip_event_target">每日目标</string>
+    <string name="sign_step_target_set">步数</string>
+    <string name="sign_distance_target_set">距离</string>
+    <string name="sign_calorie_target_set">消耗卡路里数</string>
+    <string name="sign_sport_point_target_set">锻炼点数</string>
+    <string name="sign_active_time_target_set">活跃分钟数</string>
+    <!-- 锻炼项目-->
+    <string name="title_sport_target">锻炼项目目标</string>
+    <string name="tip_sport_target">每周目标</string>
+    <!--锻炼记录-->
+    <string name="title_workout_set">锻炼记录</string>
+    <string name="tip_workout_set_tts">语音播报</string>
+    <string name="sign_outdoor_run_tts_set">户外跑步提示</string>
+    <string name="sign_indoor_sport_tts_set">室内健身提示</string>
+
+    <!-- 用户资料 -->
+    <string name="title_user_info_set">个人资料</string>
+    <string name="sign_nickname_set">昵称</string>
+    <string name="sign_gender_set">性别</string>
+    <string name="sign_location_set">地区</string>
+    <string name="sign_birthday_set">生日</string>
+    <string name="sign_height_set">身高</string>
+    <string name="sign_weight_set">体重</string>
+    <string name="sign_rest_hr_set">静息心率</string>
+    <string name="sign_max_hr_set">最大心率</string>
+    
+    <string name="title_step_detail_list">步数</string>
+    <string name="tip_step_detail_list"><b>尝试每天达到 10,000 步目标。</b>\n这是美国心脏协会的建议。</string>
+
+    <string name="title_distance_detail_list">距离</string>
+    <string name="tip_distance_detail_list"><b>FIZZO 如何计算距离？</b>\nFIZZO智能手环通过您的步长计算距离</string>
+
+    <string name="title_sport_time_detail_list">活跃时间</string>
+    <string name="tip_sport_time_detail_list"><b>活跃时间是什么？</b>\n这些是适度运动 10 分钟或更长时间的时段。   </string>
+
+    <string name="title_calorie_detail_list">消耗千卡数</string>
+    <string name="tip_calorie_detail_list"><b>FIZZO 如何记录卡路里数据？</b>\nFIZZO 记录卡路里的总体变化，包括睡眠或坐着期间消耗的卡路里。</string>
+    <string name="tip_consume_text">消耗 </string>
+    
+    <string name="title_point_detail_list">获得锻炼点数</string>
+    <string name="tip_point_detail_list"><b>锻炼点数是什么？</b>\n锻炼区间内活动每分钟将获得锻炼点数，区间一、二、三、四、五分别获得1,2,3,4,4点</string>
+    <string name="tip_get_point_text">获得 </string>
+
+    <!-- 教练首页 -->
+    <string name="title_current_page_coach">教练</string>
+    <string name="tab_coach_main">教练面板</string>
+    <string name="chart_title_train_num">训练人数</string>
+    <string name="chart_title_workout_point">锻炼点数</string>
+    
+    <string name="main_coach_student_report">学员锻炼报告</string>
+    <string name="main_coach_student_manage">学员管理</string>
+    <string name="main_coach_personal_teach_assistant">私教助手</string>
+
+    <!-- 跑步 -->
+    <string name="title_ready_run">户外跑步</string>
+    <string name="duration">时长</string>
+    <string name="run_key_length">距离（公里）</string>
+    <string name="hr">心率</string>
+    <string name="stepCount">步数</string>
+    <string name="cadence">步频</string>
+    <string name="pace">配速</string>
+
+    <!-- 室内健身 -->
+    <string name="free_effort_key_power">锻炼强度(%)</string>
+    <string name="free_effort_key_curr_hr">实时心率</string>
+    <string name="free_effort_key_curr_speed">速度(km/h)</string>
+    <string name="free_effort_key_curr_cal">千卡</string>
+    <string name="free_effort_key_max_hr">最高心率</string>
+    <string name="free_effort_key_length">距离(km)</string>
+    <string name="free_effort_key_step_count">步数</string>
+    <string name="free_effort_key_cadence">步频</string>
+    <string name="free_effort_key_duration">时长(min)</string>
+    <string name="finish_effort">结束锻炼</string>
+    <string name="free_effort_key_absolute_hr">绝对心率</string>
+    <string name="sport_power">锻炼强度</string>
+
+    <!-- 添加体重 -->
+    <string name="title_record_weight">添加体重记录</string>
+    <string name="tip_date">日期</string>
+
+    <string name="title_record_sleep">添加睡眠记录</string>
+    <string name="tip_start_time">开始时间</string>
+    <string name="tip_end_time">结束时间</string>
+
+    <!-- 私教 -->
+    <string name="title_teach_select_stu">选择私教学员</string>
+    <string name="stu_device_connecting">学员设备连接中</string>
+    <string name="stu_device_connect_tip_1">连接过程中请保持网络畅通</string>
+    <string name="stu_device_connect_tip_2">同时确认学员手机的蓝牙已经关闭</string>
+    <string name="stu_device_connect_stop">暂不连接 ></string>
+
+    <!-- workout -->
+    <string name="this_week">本周</string>
+    <string name="sport_in_room">室内健身</string>
+    <string name="run_out_room">户外跑步</string>
+    <string name="avg_hr">平均心率</string>
+    <string name="avg_power">平均强度</string>
+    <string name="workout_list_head_tip_1">锻炼记录怎么识别？</string>
+    <string name="workout_list_head_tip_2">FIZZO 会识别锻炼活动并自动生成锻炼记录。</string>
+    <string name="free_effort_info">锻炼项目</string>
+    <string name="effort_point">锻炼点数</string>
+    <string name="effort_hr_zone_tip">心率区域内时间</string>
+    <string name="sync_watch_workout_tip_1">数据同步依据手机型号不同，可能时间较长，请耐心等待</string>
+    <string name="sync_watch_workout_tip_2">或者关闭当前页面，稍后进入我的设备选择同步</string>
+
+    <!-- ble settings -->
+    <string name="title_heartbeat_settings">我的设备</string>
+    <string name="ble_scan">扫描设备</string>
+    <string name="title_heartbeat_update">设备升级</string>
+    <string name="fizzo_device">FIZZO心率手环</string>
+    <string name="device_setting_mode_title">模式选择</string>
+    <string name="device_setting_high_hr_warning_title">最高心率报警</string>
+    <string name="device_setting_bar_hr_high_title">靶心率上限</string>
+    <string name="device_setting_bar_hr_low_title">靶心率下限</string>
+    <string name="device_setting_sleep_monitor_title">24小时睡眠监测</string>
+    <string name="device_setting_update_device_title">升级设备</string>
+    <string name="device_setting_reading">读取中...</string>
+    <string name="device_unbind">解除绑定</string>
+
+    <!-- system settings -->
+    <string name="system_settings_about_us">关于我们</string>
+    <string name="system_settings_advise">建议反馈</string>
+    <string name="system_settings">设置</string>
+    <string name="about_us">FIZZO品牌所属的第五区运动科技（上海）有限公司，是一家以研发、推广和销售运动心率硬件产品和软件服务平台为主的创业公司。公司以自主研发的运动心率和血氧监测技术为核心，致力于提供让健身房管理者进行有效管理，让教练和健身爱好者进行科学训练的智能心率监控系统，也为酒店、公司、学校、专业体训队、器械生产厂提供心率等身体数据监测的穿戴式解决方案。</string>
+
+    <!-- effort -->
+    <string name="effort_target">训练目标</string>
+    <string name="effort_target_type_1">减脂</string>
+    <string name="effort_target_type_2">增强心肺</string>
+    <string name="effort_duration">锻炼时长</string>
+    <string name="effort_time_30">30分钟</string>
+    <string name="effort_time_45">45分钟</string>
+    <string name="effort_time_60">60分钟</string>
+
+    <string name="running_indoor_warm_up">跑前拉伸</string>
+    <string name="running_indoor_cold_down">跑后拉伸</string>
+    <string name="start_effort">开始锻炼</string>
+
+    <string name="effort_warm_title_1">臀屈肌拉伸左右交互</string>
+    <string name="effort_warm_title_2">腿部屈肌拉伸左右交互</string>
+    <string name="effort_warm_title_3">腿部伸肌拉伸左右交互</string>
+    <string name="effort_warm_title_4">脚部屈肌拉伸左右交互</string>
+    <string name="effort_warm_title_5">臀部伸肌拉伸左右交互</string>
+    <string name="effort_warm_info_1">挺胸直立，抬起右手手臂放在身前，随后抬起你的右腿，使得膝盖呈现出
+      一个直角，大腿与地面保持平行状态。当你抬腿的时候，左右手保持一个
+      交叉的挥动动作，然后交叉左右腿进行练习，这个动作可以提升你腿部的
+      力量。</string>
+    <string name="effort_warm_info_2">挺胸直立，然后弯曲你的臀部和膝盖，将右腿逐渐提升到胸部正前方的水
+        平，同时甩动自己的左臂，左右脚交替完成这组动作，持续一分钟以上。</string>
+    <string name="effort_warm_info_3">挺胸直立，绷紧你的腿部韧带，然后向身后抬升你的膝盖，使得你的脚后
+      跟对着你的臀部，在抬起右膝盖的时候挥动左臂向上，重复交叉练习，保
+      持一分钟以上。这可以提升你腿部的力量和柔韧性。</string>
+    <string name="effort_warm_info_4">挺胸直立，双手腰，抬起你的右脚，离地大约有十几厘米，让膝盖保持笔
+      直，然后快速的活动你的脚踝，让脚趾的方向上下移动。然后恢复双腿站
+      立，换另一只脚进行相同的练习。</string>
+    <string name="effort_warm_info_5">略微弯曲你的身体，首先抬起你的右腿，脚尖略微朝下，然后快速有力的
+      向后蹬出，动作就好像是你在跑步一样。双臂配合双腿的动作挥动，当腿
+      向后蹬出之后，保持这个动作几秒钟的时间，然后换一只腿继续进行练习
+      ，重复这个动作持续至少1分钟的时间。</string>
+
+    <string name="effort_cold_title_1">颈部后侧斜方肌拉伸</string>
+    <string name="effort_cold_title_2">三角肌的拉伸</string>
+    <string name="effort_cold_title_3">肱三头肌拉伸</string>
+    <string name="effort_cold_title_4">大小腿后侧肌群拉伸</string>
+    <string name="effort_cold_title_5">股四头肌拉伸</string>
+    <string name="effort_cold_title_6">小腿腘绳肌拉伸</string>
+    <string name="effort_cold_title_7">身体一侧肌群拉伸</string>
+    <string name="effort_cold_info_1">身体站立成中立位，将头部往右斜前方倾斜，然后用右手放在头部上方给
+       予向下的压力，进一步拉伸。保持15-30秒。</string>
+    <string name="effort_cold_info_2">挺身体成中立位，目视前方，右臂伸直举起，在水平面方向，往左侧去贴
+       近胸部，左手给右臂一个拉近身体的拉力，感受右臂上方三角肌的拉伸。
+       保持15-30秒。</string>
+    <string name="effort_cold_info_3">身体成中立位，目视前方，屈右臂将右手放在后背脊柱中央，用左手给右
+       臂肘部拉力，感受肱三头肌的拉伸。保持15-30秒。</string>
+    <string name="effort_cold_info_4">首先屈髋，左脚往前迈一小步，腿伸直并勾脚尖，双手往下去尽力触摸脚
+       尖，往下的同时注意吐气。保持15-30秒。</string>
+    <string name="effort_cold_info_5">右腿支撑，上身保持正直，抬起右臂往上同时，左手握左脚脚踝，后拉。
+       注意：脚跟尽量贴近屁股，双腿靠近。后拉，感受大腿前侧股四头肌的拉
+       伸；保持15-30秒。</string>
+    <string name="effort_cold_info_6">左腿往前迈一步，右腿在后，后侧退保持绷直，双脚脚尖同一方向向前，
+       双手叉腰，身体重心前移，感受小腿的拉伸；保持15-30秒。</string>
+    <string name="effort_cold_info_7">将右脚放在左腿后斜方保持伸直，左腿微屈支撑，左手叉腰，右手伸直往
+       上举起，上身往左侧弯曲，感受身体右侧肌群的拉伸；保持15-30秒。</string>
+
+    <string name="effort_low">偏低</string>
+    <string name="effort_high">偏高</string>
+    <string name="effort_warm_up">热身</string>
+    <string name="effort_cold_down">冷身</string>
+
+    <string name="title_workout_rename">编辑记录</string>
+</resources>

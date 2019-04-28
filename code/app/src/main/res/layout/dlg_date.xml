@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="222dp"
+              android:layout_height="match_parent"
+              android:background="@color/dialog_bg"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_date_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="15dp"/>
+
+        <View
+            style="@style/DividerH"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <cn.hwh.sports.ui.datepicker.DatePicker
+            android:id="@+id/dp_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/DividerH"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

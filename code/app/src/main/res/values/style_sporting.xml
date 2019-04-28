@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SportingDataLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+    
+    <style name="SportingDataTvValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">39dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SportingDataTvName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11.7dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <!-- Workout chart scale -->
+    <style name="WorkoutChartScaleLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="WorkoutChartScaleLeftTv">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_secondly</item>
+        <item name="android:textSize">9.8dp</item>
+    </style>
+
+    <style name="WorkoutChartScaleRightTv">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_secondly</item>
+        <item name="android:textSize">9.8dp</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="WorkoutChartScaleLine">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#A5e5e5e5</item>
+    </style>
+
+    <!-- running outdoor -->
+    <style name="RunningOutdoorKeyTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14.7dp</item>
+    </style>
+    <style name="RunningOutdoorValueTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">39dp</item>
+    </style>
+    <style name="RunningOutdoorDataLl">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- workout info hr graphic tv -->
+    <style name="WorkoutHrGraphicRangeTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">11.5dp</item>
+    </style>
+
+    <style name="WorkoutHrGraphicZoneTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/tv_secondly</item>
+        <item name="android:textSize">11.5dp</item>
+    </style>
+
+    <style name="WorkoutHrGraphicTimeTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:textSize">11.5dp</item>
+    </style>
+
+    <style name="WorkoutCalendarDataLl">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="WorkoutCalendarDataValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:textSize">39dp</item>
+    </style>
+
+    <style name="WorkoutCalendarDataName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:textSize">11.7dp</item>
+    </style>
+
+    <style name="RunningMapZoneValueTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11.7dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RunningMapZoneNameTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:textSize">11.7dp</item>
+    </style>
+
+    <style name="WorkoutTabPageIndicator" parent="Material.Widget.TabPageIndicator">
+        <item name="tpi_tabRipple">@style/LightTabRippleStyle</item>
+        <item name="tpi_indicatorHeight">2dp</item>
+        <item name="tpi_indicatorColor">#ff4612</item>
+        <item name="android:textAppearance">@style/WorkoutTabTextAppearance</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="tpi_mode">scroll</item>
+    </style>
+    <style name="WorkoutLineLl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="WorkoutDataLl">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="WorkoutValueTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:textSize">29dp</item>
+    </style>
+    <style name="WorkoutKeyTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_mostly</item>
+        <item name="android:textSize">11.7dp</item>
+    </style>
+</resources>

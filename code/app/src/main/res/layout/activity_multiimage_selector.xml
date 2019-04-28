@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Title_Layout">
+
+        <ImageButton
+            android:id="@+id/title_bar_left_menu"
+            style="@style/Title_BackButton" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Title_TitleTv"
+            android:text="@string/title_select_photo" />
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:text="@string/complete"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/image_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#181819" />
+
+</LinearLayout>

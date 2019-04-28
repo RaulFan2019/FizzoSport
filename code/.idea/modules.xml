@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EventBus/EventBus.iml" filepath="$PROJECT_DIR$/EventBus/EventBus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SourceCode2.0.iml" filepath="$PROJECT_DIR$/SourceCode2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseUtilslib/baseUtilslib.iml" filepath="$PROJECT_DIR$/baseUtilslib/baseUtilslib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dfulib/dfulib.iml" filepath="$PROJECT_DIR$/dfulib/dfulib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marsdaemon/marsdaemon.iml" filepath="$PROJECT_DIR$/marsdaemon/marsdaemon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpchartlib/mpchartlib.iml" filepath="$PROJECT_DIR$/mpchartlib/mpchartlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickviewlibrary/pickviewlibrary.iml" filepath="$PROJECT_DIR$/pickviewlibrary/pickviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umengPushSDK/umengPushSDK.iml" filepath="$PROJECT_DIR$/umengPushSDK/umengPushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/umlib/umlib.iml" filepath="$PROJECT_DIR$/umlib/umlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/view_image_selector/view_image_selector.iml" filepath="$PROJECT_DIR$/view_image_selector/view_image_selector.iml" />
+    </modules>
+  </component>
+</project>
