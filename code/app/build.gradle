@@ -10,15 +10,15 @@ android {
             storePassword '123Sports'
         }
     }
-    compileSdkVersion 24
+    compileSdkVersion 28
     buildToolsVersion "24.0.1"
 
     defaultConfig {
         applicationId "cn.hwh.sports"
         minSdkVersion 18
-        targetSdkVersion 22
-        versionCode 17
-        versionName "FIZZO Ver.2.2.5"
+        targetSdkVersion 28
+        versionCode 18
+        versionName "FIZZO Ver.2.2.6"
         multiDexEnabled true
     }
     splits {

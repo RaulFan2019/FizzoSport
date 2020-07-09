@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EventBus/EventBus.iml" filepath="$PROJECT_DIR$/EventBus/EventBus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SourceCode2.0.iml" filepath="$PROJECT_DIR$/SourceCode2.0.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/baseUtilslib/baseUtilslib.iml" filepath="$PROJECT_DIR$/baseUtilslib/baseUtilslib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dfulib/dfulib.iml" filepath="$PROJECT_DIR$/dfulib/dfulib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/marsdaemon/marsdaemon.iml" filepath="$PROJECT_DIR$/marsdaemon/marsdaemon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mpchartlib/mpchartlib.iml" filepath="$PROJECT_DIR$/mpchartlib/mpchartlib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pickviewlibrary/pickviewlibrary.iml" filepath="$PROJECT_DIR$/pickviewlibrary/pickviewlibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/umengPushSDK/umengPushSDK.iml" filepath="$PROJECT_DIR$/umengPushSDK/umengPushSDK.iml" />
-      <module fileurl="file://$PROJECT_DIR$/umlib/umlib.iml" filepath="$PROJECT_DIR$/umlib/umlib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/view_image_selector/view_image_selector.iml" filepath="$PROJECT_DIR$/view_image_selector/view_image_selector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EventBus/EventBus.iml" filepath="$PROJECT_DIR$/EventBus/EventBus.iml" group="code/EventBus" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="code/app" />
+      <module fileurl="file://$PROJECT_DIR$/baseUtilslib/baseUtilslib.iml" filepath="$PROJECT_DIR$/baseUtilslib/baseUtilslib.iml" group="code/baseUtilslib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/code.iml" filepath="$PROJECT_DIR$/.idea/modules/code.iml" group="code" />
+      <module fileurl="file://$PROJECT_DIR$/dfulib/dfulib.iml" filepath="$PROJECT_DIR$/dfulib/dfulib.iml" group="code/dfulib" />
+      <module fileurl="file://$PROJECT_DIR$/marsdaemon/marsdaemon.iml" filepath="$PROJECT_DIR$/marsdaemon/marsdaemon.iml" group="code/marsdaemon" />
+      <module fileurl="file://$PROJECT_DIR$/mpchartlib/mpchartlib.iml" filepath="$PROJECT_DIR$/mpchartlib/mpchartlib.iml" group="code/mpchartlib" />
+      <module fileurl="file://$PROJECT_DIR$/pickviewlibrary/pickviewlibrary.iml" filepath="$PROJECT_DIR$/pickviewlibrary/pickviewlibrary.iml" group="code/pickviewlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/umengPushSDK/umengPushSDK.iml" filepath="$PROJECT_DIR$/umengPushSDK/umengPushSDK.iml" group="code/umengPushSDK" />
+      <module fileurl="file://$PROJECT_DIR$/umlib/umlib.iml" filepath="$PROJECT_DIR$/umlib/umlib.iml" group="code/umlib" />
+      <module fileurl="file://$PROJECT_DIR$/view_image_selector/view_image_selector.iml" filepath="$PROJECT_DIR$/view_image_selector/view_image_selector.iml" group="code/view_image_selector" />
     </modules>
   </component>
 </project>

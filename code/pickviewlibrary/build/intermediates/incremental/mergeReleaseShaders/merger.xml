@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\workspace\company porject\FizoApp\SourceCode2.0\pickviewlibrary\src\main\shaders"/></dataSet><dataSet config="release"><source path="D:\workspace\company porject\FizoApp\SourceCode2.0\pickviewlibrary\src\release\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\FIZZO GitHub\FizzoSport\FizzoSport\code\pickviewlibrary\src\main\shaders"/></dataSet><dataSet config="release"><source path="D:\FIZZO GitHub\FizzoSport\FizzoSport\code\pickviewlibrary\src\release\shaders"/></dataSet></merger>
